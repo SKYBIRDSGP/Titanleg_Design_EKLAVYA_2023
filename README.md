@@ -9,3 +9,8 @@ This project aims towards the design and the development of the robotic legs, an
 
 ### This is the Drive link for my [Notes](https://drive.google.com/drive/folders/1BKAqDc1qUA2TaJVheQEBdqIbFcL9Njp0)
 
+## The Flow of the project :
+
+First the basic concepts of the project needs to be cleared. Quadrupped is advantageous, but how can we approach and make it? What are the pre-preparation for the same?  
+ We just need to undergo the previous researchs on the Quadraped Robots, have a basic understanding of the mechanisms we need to drive the upper and lower leg links, get abbduction as well as adduction , have a basic knowledge of materials ,the Leg modelling and simulations as well.
+ Then comes the manufacture part and the various tests (No worries, will cover up section by section and level up). 
