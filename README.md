@@ -57,4 +57,8 @@ RH SIDE VIEW :
 TOP VIEW :
 ![ce243326-132b-4111-ad0a-ca651b6851f3](https://github.com/SKYBIRDSGP/Titanleg_Design_EKLAVYA_2023/assets/129577682/4de38be1-4b7b-4263-957a-94a431f69e92)
 
+### LIVE ACTION :
+https://github.com/SKYBIRDSGP/Titanleg_Design_EKLAVYA_2023/assets/129577682/f76e7c9b-c0a0-4d38-a91d-eedadaec93cd
+
+
 But this doesn't end here...Picture toh abhi baki hai😏.  Next comes the critical analysis and the necessry changes and alsso the material selection part.
