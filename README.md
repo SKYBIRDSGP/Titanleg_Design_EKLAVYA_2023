@@ -19,15 +19,17 @@ First the basic concepts of the project needs to be cleared. Quadrupped is advan
 Let's start from start. We had a rough idea about the Quadrupped Robots, their working, advantages, applications ...blah blah. But this wasn't just enough to design a leg on which the bot would completely rely.There are many factors on which the stability margin of our bot depends, for eg. the material used, the gears reduction, the materials....and this goes on. Just imagine yourself while walking, your smooth locomotion depends on the factors like your hip joint and knee joint , your leg links ; similar is for the Quadrupeds.  
      It was really a challenging task then to get our concepts stronger, our imagination wider and maike the bot's eg stronger. And knowing htis all we then started with the study. We picked the research papers of some of the very famous Quadrupeds like [MIT Cheetah](https://news.mit.edu/2019/mit-mini-cheetah-first-four-legged-robot-to-backflip-0304), [IISc Stoch](https://eprints.iisc.ac.in/77543/1/ICCAR_2019.pdf), [ANYmal](https://www.youtube.com/watch?app=desktop&v=P6y_dhFTgik) and then after having a good study of the locomotion system & power transmission system of these, we started the our leg's rough paper sketches.
 ### ANYmal : 
-![Alt text](anymal-c-legged-robot-inspection-transparent-1024x1024.png)
+![download](https://github.com/SKYBIRDSGP/Titanleg_Design_EKLAVYA_2023/assets/129577682/f5f8bfda-b29f-4fb1-97db-aa49d578136e)
+
   
 ### MIT Cheetah :
-![Alt text](84cf1eb2b6409c885983145fe87c01c0051feb9f-500x500.jpg)
+![download](https://github.com/SKYBIRDSGP/Titanleg_Design_EKLAVYA_2023/assets/129577682/db037781-46a1-4cf7-8830-ff7dd1f6a7ee)
+
 
   
 ### Stoch :
 
-![Alt text](stoch13.jpg)
+![download](https://github.com/SKYBIRDSGP/Titanleg_Design_EKLAVYA_2023/assets/129577682/1776ae62-b2e5-46a2-b4a7-2388552717e6)
 
 
 
@@ -41,15 +43,18 @@ This way we got 3 designs ready for our Quadruped Titan.
   We got these designs with their dimensions and then startec implementing them in [SOLIDWORKS](https://www.solidworks.com/). We also used [FUSION360](https://www.autodesk.com/solutions/what-is-fusion-360) whenever required. 
     Getting started with the Pentograph mechanism in Solid Works, basically, a Pentograph or scissor lift, is a type of platform which moves vertically rather than horizontally. It uses linked, folding supports in a criss-cross pattern.
 
-      Finally after spending almost a week on the designing part, we finally got 2 designs completed simultaneously.
+Finally after spending almost a week on the designing part, we finally got 2 designs completed simultaneously.
 
 ### THE DESIGN USING PENTOGRAPH MECHANISM : 
 FORNT VIEW : 
-![Alt text](image.png)
+![4f0bf5f7-6f07-4ada-83de-bcbfba37c65f](https://github.com/SKYBIRDSGP/Titanleg_Design_EKLAVYA_2023/assets/129577682/02d70f27-4c38-4280-8208-db04c1f5c423)
+
 
 RH SIDE VIEW : 
-![Alt text](image-1.png)
+![e38a6f9b-7cee-437b-b85d-4b7b6221a463](https://github.com/SKYBIRDSGP/Titanleg_Design_EKLAVYA_2023/assets/129577682/1a13d9fe-372e-4745-ad93-5fa6cfc32280)
+
 
 TOP VIEW :
-![Alt text](image-2.png)
+![ce243326-132b-4111-ad0a-ca651b6851f3](https://github.com/SKYBIRDSGP/Titanleg_Design_EKLAVYA_2023/assets/129577682/4de38be1-4b7b-4263-957a-94a431f69e92)
 
+But this doesn't end here...Picture toh abhi baki hai😏.  Next comes the critical analysis and the necessry changes and alsso the material selection part.
