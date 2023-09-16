@@ -41,7 +41,7 @@ This way we got 3 designs ready for our Quadruped Titan.
   We got these designs with their dimensions and then startec implementing them in [SOLIDWORKS](https://www.solidworks.com/). We also used [FUSION360](https://www.autodesk.com/solutions/what-is-fusion-360) whenever required. 
     Getting started with the Pentograph mechanism in Solid Works, basically, a Pentograph or scissor lift, is a type of platform which moves vertically rather than horizontally. It uses linked, folding supports in a criss-cross pattern.
 
-      Finally after spending almost a week on the designing part, we finally got 2 designs completed simultaneously.
+Finally after spending almost a week on the designing part, we finally got 2 designs completed simultaneously.
 
 ### THE DESIGN USING PENTOGRAPH MECHANISM : 
 FORNT VIEW : 
