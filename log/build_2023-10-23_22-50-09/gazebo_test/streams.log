@@ -1,0 +1,27 @@
+[0.011s] Invoking command in '/home/ananya/ros2_ws/build/gazebo_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ananya/ros2_ws/install/robot_controller:/home/ananya/colcon_ws/install/launch_testing_examples:/home/ananya/colcon_ws/install/examples_rclpy_pointcloud_publisher:/home/ananya/colcon_ws/install/examples_rclpy_minimal_subscriber:/home/ananya/colcon_ws/install/examples_rclpy_minimal_service:/home/ananya/colcon_ws/install/examples_rclpy_minimal_publisher:/home/ananya/colcon_ws/install/examples_rclpy_minimal_client:/home/ananya/colcon_ws/install/examples_rclpy_minimal_action_server:/home/ananya/colcon_ws/install/examples_rclpy_minimal_action_client:/home/ananya/colcon_ws/install/examples_rclpy_guard_conditions:/home/ananya/colcon_ws/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake /home/ananya/ros2_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/ananya/ros2_ws/install/gazebo_test
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.093s] -- The CXX compiler identification is GNU 11.4.0
+[0.098s] -- Detecting C compiler ABI info
+[0.154s] -- Detecting C compiler ABI info - done
+[0.159s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.159s] -- Detecting C compile features
+[0.160s] -- Detecting C compile features - done
+[0.162s] -- Detecting CXX compiler ABI info
+[0.223s] -- Detecting CXX compiler ABI info - done
+[0.229s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.229s] -- Detecting CXX compile features
+[0.229s] -- Detecting CXX compile features - done
+[0.231s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.372s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.439s] [31mCMake Error at CMakeLists.txt:11 (install):
+[0.439s]   install does not recognize sub-command launch
+[0.440s] 
+[0.440s] [0m
+[0.440s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.499s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.499s] -- Added test 'lint_cmake' to check CMake code style
+[0.500s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.501s] -- Added test 'xmllint' to check XML markup files
+[0.502s] -- Configuring incomplete, errors occurred!
+[0.502s] See also "/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/CMakeOutput.log".
+[0.505s] Invoked command in '/home/ananya/ros2_ws/build/gazebo_test' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ananya/ros2_ws/install/robot_controller:/home/ananya/colcon_ws/install/launch_testing_examples:/home/ananya/colcon_ws/install/examples_rclpy_pointcloud_publisher:/home/ananya/colcon_ws/install/examples_rclpy_minimal_subscriber:/home/ananya/colcon_ws/install/examples_rclpy_minimal_service:/home/ananya/colcon_ws/install/examples_rclpy_minimal_publisher:/home/ananya/colcon_ws/install/examples_rclpy_minimal_client:/home/ananya/colcon_ws/install/examples_rclpy_minimal_action_server:/home/ananya/colcon_ws/install/examples_rclpy_minimal_action_client:/home/ananya/colcon_ws/install/examples_rclpy_guard_conditions:/home/ananya/colcon_ws/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake /home/ananya/ros2_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/ananya/ros2_ws/install/gazebo_test

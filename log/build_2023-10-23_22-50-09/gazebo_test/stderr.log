@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:11 (install):
+  install does not recognize sub-command launch
+
+[0m

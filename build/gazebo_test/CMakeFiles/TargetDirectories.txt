@@ -1,0 +1,9 @@
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/uninstall.dir
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/gazebo_test_uninstall.dir
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/test.dir
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/edit_cache.dir
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/rebuild_cache.dir
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/list_install_components.dir
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/install.dir
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/install/local.dir
+/home/ananya/ros2_ws/build/gazebo_test/CMakeFiles/install/strip.dir

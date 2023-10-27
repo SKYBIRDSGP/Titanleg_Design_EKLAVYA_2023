@@ -1,0 +1,4 @@
+source;share/gazebo_test/local_setup.bash
+source;share/gazebo_test/local_setup.dsv
+source;share/gazebo_test/local_setup.sh
+source;share/gazebo_test/local_setup.zsh

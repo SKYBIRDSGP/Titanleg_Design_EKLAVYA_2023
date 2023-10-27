@@ -1,0 +1,16 @@
+[0.013s] Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake --build /home/ananya/ros2_ws/build/my_box_bot_gazebo -- -j8 -l8
+[0.058s] Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '0': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake --build /home/ananya/ros2_ws/build/my_box_bot_gazebo -- -j8 -l8
+[0.077s] Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake --install /home/ananya/ros2_ws/build/my_box_bot_gazebo
+[0.084s] -- Install configuration: ""
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch
+[0.085s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/spawn_robot_description.launch.py
+[0.085s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/start_world.launch.py
+[0.085s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds
+[0.085s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds/box_bot_empty.world
+[0.085s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.085s]   file INSTALL cannot find
+[0.085s]   "/home/ananya/ros2_ws/src/my_box_bot_gazebo/models": No such file or
+[0.085s]   directory.
+[0.085s] 
+[0.085s] [0m
+[0.086s] Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '1': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake --install /home/ananya/ros2_ws/build/my_box_bot_gazebo

@@ -1,0 +1,2 @@
+Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ananya/ros2_ws/src/my_box_bot_gazebo -DCMAKE_INSTALL_PREFIX=/home/ananya/ros2_ws/install/my_box_bot_gazebo
+Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ananya/ros2_ws/src/my_box_bot_gazebo -DCMAKE_INSTALL_PREFIX=/home/ananya/ros2_ws/install/my_box_bot_gazebo

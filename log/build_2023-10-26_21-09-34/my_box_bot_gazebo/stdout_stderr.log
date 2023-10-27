@@ -1,0 +1,12 @@
+-- Install configuration: ""
+-- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch
+-- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/spawn_robot_description.launch.py
+-- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/start_world.launch.py
+-- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds
+-- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds/box_bot_empty.world
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/ananya/ros2_ws/src/my_box_bot_gazebo/models": No such file or
+  directory.
+
+[0m

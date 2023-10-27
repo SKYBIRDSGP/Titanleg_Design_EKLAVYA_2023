@@ -1,0 +1,15 @@
+/home/ananya/ros2_ws/install/my_box_bot_description/share/ament_index/resource_index/package_run_dependencies/my_box_bot_description
+/home/ananya/ros2_ws/install/my_box_bot_description/share/ament_index/resource_index/parent_prefix_path/my_box_bot_description
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/environment/ament_prefix_path.sh
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/environment/ament_prefix_path.dsv
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/environment/path.sh
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/environment/path.dsv
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.bash
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.sh
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.zsh
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/local_setup.dsv
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/package.dsv
+/home/ananya/ros2_ws/install/my_box_bot_description/share/ament_index/resource_index/packages/my_box_bot_description
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/cmake/my_box_bot_descriptionConfig.cmake
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/cmake/my_box_bot_descriptionConfig-version.cmake
+/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/package.xml

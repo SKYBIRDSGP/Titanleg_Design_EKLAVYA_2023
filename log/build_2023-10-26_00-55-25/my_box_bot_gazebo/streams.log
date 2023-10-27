@@ -1,0 +1,146 @@
+[0.005s] Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake /home/ananya/ros2_ws/src/my_box_bot_gazebo -DCMAKE_INSTALL_PREFIX=/home/ananya/ros2_ws/install/my_box_bot_gazebo
+[0.015s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.110s] -- Found rclpy: 3.3.9 (/opt/ros/humble/share/rclpy/cmake)
+[0.111s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.130s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.132s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.136s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.143s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.153s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.190s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.191s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.270s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.394s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.411s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.412s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.415s] -- Searching for dependencies of ignition-math6
+[0.416s] -- Looking for OGRE...
+[0.420s] -- Found Ogre Ghadamon (1.9.0)
+[0.420s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.426s] -- Looking for OGRE_Paging...
+[0.427s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.427s] -- Looking for OGRE_Terrain...
+[0.427s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.427s] -- Looking for OGRE_Property...
+[0.427s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.427s] -- Looking for OGRE_RTShaderSystem...
+[0.427s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.427s] -- Looking for OGRE_Volume...
+[0.427s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.427s] -- Looking for OGRE_Overlay...
+[0.427s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.489s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.489s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.489s] -- Searching for dependencies of ignition-transport8
+[0.502s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.509s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.512s] -- Checking for module 'libzmq >= 4'
+[0.521s] --   Found libzmq , version 4.3.4
+[0.549s] -- Checking for module 'uuid'
+[0.557s] --   Found uuid, version 2.37.2
+[0.595s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.596s] -- Searching for dependencies of ignition-msgs5
+[0.612s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.616s] -- Checking for module 'tinyxml2'
+[0.625s] --   Found tinyxml2, version 9.0.0
+[0.652s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.652s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.653s] -- Searching for dependencies of ignition-common3
+[0.653s] -- Looking for dlfcn.h - found
+[0.653s] -- Looking for libdl - found
+[0.662s] -- Searching for <ignition-common3> component [graphics]
+[0.663s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.663s] -- Searching for dependencies of ignition-common3-graphics
+[0.663s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.664s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.664s] -- Searching for dependencies of ignition-fuel_tools4
+[0.691s] -- Checking for module 'jsoncpp'
+[0.700s] --   Found jsoncpp, version 1.9.5
+[0.726s] -- Checking for module 'libzip'
+[0.735s] --   Found libzip, version 1.7.3
+[0.770s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.770s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.771s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.773s] -- Gazebo version: 11.10
+[0.780s] -- Found my_box_bot_description: 0.0.0 (/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/cmake)
+[0.781s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.852s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.856s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.856s] -- Added test 'lint_cmake' to check CMake code style
+[0.857s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.858s] -- Added test 'xmllint' to check XML markup files
+[0.859s] -- Configuring done
+[0.862s] -- Generating done
+[0.864s] -- Build files have been written to: /home/ananya/ros2_ws/build/my_box_bot_gazebo
+[0.872s] Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '0': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake /home/ananya/ros2_ws/src/my_box_bot_gazebo -DCMAKE_INSTALL_PREFIX=/home/ananya/ros2_ws/install/my_box_bot_gazebo
+[0.872s] Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake --build /home/ananya/ros2_ws/build/my_box_bot_gazebo -- -j8 -l8
+[0.902s] Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '0': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake --build /home/ananya/ros2_ws/build/my_box_bot_gazebo -- -j8 -l8
+[0.920s] Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake --install /home/ananya/ros2_ws/build/my_box_bot_gazebo
+[0.927s] -- Install configuration: ""
+[0.927s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch
+[0.927s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/start_world.launch.py
+[0.927s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds
+[0.927s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds/box_bot_empty.world
+[0.927s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models
+[0.927s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design
+[0.927s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/export.log
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/textures
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/CMakeLists.txt
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/urdf
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/urdf/design1_urdf.csv
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/urdf/design1_urdf.urdf
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/package.xml
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/launch
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/launch/gazebo.launch
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/launch/display.launch
+[0.928s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes
+[0.929s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/base_link.STL
+[0.931s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/pulley.STL
+[0.931s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/lowleg1.STL
+[0.931s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/leg1.STL
+[0.931s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/lowleg2.STL
+[0.931s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/cbracket.STL
+[0.931s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/acc1.STL
+[0.933s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/leg2.STL
+[0.933s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/meshes/acc2.STL
+[0.935s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf
+[0.935s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/export.log
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/textures
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/CMakeLists.txt
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/urdf
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/urdf/design1_urdf.csv
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/urdf/design1_urdf.urdf
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/package.xml
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/launch
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/launch/gazebo.launch
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/launch/display.launch
+[0.936s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes
+[0.937s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/base_link.STL
+[0.938s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/pulley.STL
+[0.938s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/lowleg1.STL
+[0.938s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/leg1.STL
+[0.939s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/lowleg2.STL
+[0.939s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/cbracket.STL
+[0.939s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/acc1.STL
+[0.941s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/leg2.STL
+[0.941s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/meshes/acc2.STL
+[0.942s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/config
+[0.942s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/design1_urdf/config/joint_names_design1_urdf.yaml
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/config
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//models/design/config/joint_names_design1_urdf.yaml
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/package_run_dependencies/my_box_bot_gazebo
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/parent_prefix_path/my_box_bot_gazebo
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/ament_prefix_path.sh
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/ament_prefix_path.dsv
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/path.sh
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/path.dsv
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.bash
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.sh
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.zsh
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.dsv
+[0.943s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/package.dsv
+[0.944s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/packages/my_box_bot_gazebo
+[0.944s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/cmake/my_box_bot_gazeboConfig.cmake
+[0.944s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/cmake/my_box_bot_gazeboConfig-version.cmake
+[0.944s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/package.xml
+[0.947s] Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '0': AMENT_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/opt/ros/humble /usr/bin/cmake --install /home/ananya/ros2_ws/build/my_box_bot_gazebo
