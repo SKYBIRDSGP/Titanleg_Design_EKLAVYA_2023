@@ -3,21 +3,21 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="design1_urdf">
+  name="Assem1_urdf">
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="2.90327133735477E-06 -1.15086574470347E-06 0.0490628648498654"
+        xyz="0.285543629985341 0.194998849134254 0.401468537938472"
         rpy="0 0 0" />
       <mass
         value="0.444641789820814" />
       <inertia
         ixx="0.000422378679078014"
-        ixy="-1.6496903320577E-07"
-        ixz="-3.42815948251568E-09"
+        ixy="1.64969033205762E-07"
+        ixz="-3.42815948251253E-09"
         iyy="0.000422371403132014"
-        iyz="3.14388659634852E-09"
+        iyz="-3.14388659635174E-09"
         izz="0.000783515664494764" />
     </inertial>
     <visual>
@@ -26,8 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/base_link.STL" />
+          filename="package://Assem1_urdf/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -41,8 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/base_link.STL" />
+          filename="package://Assem1_urdf/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -50,16 +48,16 @@
     name="cbracket">
     <inertial>
       <origin
-        xyz="6.66379779351058E-06 1.29531010308603E-05 0.11188395734268"
+        xyz="0.285539869458885 0.195012953101029 0.338647445445658"
         rpy="0 0 0" />
       <mass
         value="0.194139827709801" />
       <inertia
         ixx="0.000187909216337473"
-        ixy="-1.7867621148589E-09"
-        ixz="-1.04515996229646E-08"
-        iyy="0.00024615757330532"
-        iyz="-3.72184232657869E-08"
+        ixy="1.78676211485826E-09"
+        ixz="-1.04515996229664E-08"
+        iyy="0.000246157573305321"
+        iyz="3.72184232658196E-08"
         izz="0.000261155018400835" />
     </inertial>
     <visual>
@@ -68,8 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/cbracket.STL" />
+          filename="package://Assem1_urdf/meshes/cbracket.STL" />
       </geometry>
       <material
         name="">
@@ -83,8 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/cbracket.STL" />
+          filename="package://Assem1_urdf/meshes/cbracket.STL" />
       </geometry>
     </collision>
   </link>
@@ -99,7 +95,7 @@
     <child
       link="cbracket" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 0 -1" />
     <limit
       lower="0"
       upper="3.142"
@@ -110,17 +106,17 @@
     name="acc1">
     <inertial>
       <origin
-        xyz="-2.34068277550539E-06 -0.0224052594570396 0.174000199951876"
+        xyz="0.285548873939453 0.172594740542959 0.276531202836462"
         rpy="0 0 0" />
       <mass
-        value="0.580805573043355" />
+        value="0.580805573043362" />
       <inertia
-        ixx="0.000492159787240379"
-        ixy="-1.50936770006795E-09"
-        ixz="-8.56532320557236E-08"
-        iyy="0.000905329045450525"
-        iyz="4.37109713345542E-09"
-        izz="0.000492444403465043" />
+        ixx="0.000492159787240385"
+        ixy="1.50936769975587E-09"
+        ixz="-8.56532320526593E-08"
+        iyy="0.000905329045450532"
+        iyz="-4.37109713281588E-09"
+        izz="0.000492444403465044" />
     </inertial>
     <visual>
       <origin
@@ -128,8 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/acc1.STL" />
+          filename="package://Assem1_urdf/meshes/acc1.STL" />
       </geometry>
       <material
         name="">
@@ -143,8 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/acc1.STL" />
+          filename="package://Assem1_urdf/meshes/acc1.STL" />
       </geometry>
     </collision>
   </link>
@@ -170,16 +164,16 @@
     name="acc2">
     <inertial>
       <origin
-        xyz="2.4580643749085E-06 -0.132585870748234 0.174001346288772"
+        xyz="0.285544075192303 0.0624141292517647 0.276530056499566"
         rpy="0 0 0" />
       <mass
         value="0.487854306232371" />
       <inertia
         ixx="0.000462080596257296"
-        ixy="4.52868915355271E-09"
-        ixz="-8.61850755093217E-08"
+        ixy="-4.52868915355638E-09"
+        ixz="-8.61850755093484E-08"
         iyy="0.000789118999661582"
-        iyz="-1.04646866712111E-09"
+        iyz="1.04646866712411E-09"
         izz="0.000461798296135276" />
     </inertial>
     <visual>
@@ -188,8 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/acc2.STL" />
+          filename="package://Assem1_urdf/meshes/acc2.STL" />
       </geometry>
       <material
         name="">
@@ -203,8 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/acc2.STL" />
+          filename="package://Assem1_urdf/meshes/acc2.STL" />
       </geometry>
     </collision>
   </link>
@@ -230,17 +222,17 @@
     name="leg1">
     <inertial>
       <origin
-        xyz="0.136835766407545 -0.169013552372649 0.172020859625875"
+        xyz="0.148710766849133 0.0259864476273492 0.278510543162463"
         rpy="0 0 0" />
       <mass
         value="0.36589545292241" />
       <inertia
         ixx="0.000466959962116375"
-        ixy="-3.62148513981743E-07"
-        ixz="7.41602205024747E-05"
-        iyy="0.00547244468330666"
-        iyz="1.39736383693459E-07"
-        izz="0.00501424101543545" />
+        ixy="3.62148513981734E-07"
+        ixz="7.41602205024745E-05"
+        iyy="0.00547244468330663"
+        iyz="-1.39736383693459E-07"
+        izz="0.00501424101543542" />
     </inertial>
     <visual>
       <origin
@@ -248,8 +240,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/leg1.STL" />
+          filename="package://Assem1_urdf/meshes/leg1.STL" />
       </geometry>
       <material
         name="">
@@ -263,8 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/leg1.STL" />
+          filename="package://Assem1_urdf/meshes/leg1.STL" />
       </geometry>
     </collision>
   </link>
@@ -290,16 +280,16 @@
     name="lowleg1">
     <inertial>
       <origin
-        xyz="0.276110187782911 -0.188613373131559 0.28124704166264"
+        xyz="0.00943634547376737 0.00638662686843915 0.169284361125698"
         rpy="0 0 0" />
       <mass
         value="0.662807706648712" />
       <inertia
         ixx="0.00531282955170692"
-        ixy="1.02126813768498E-05"
+        ixy="-1.02126813768498E-05"
         ixz="-0.000269149166010491"
         iyy="0.00576046743541068"
-        iyz="0.000183354822039283"
+        iyz="-0.000183354822039283"
         izz="0.00049846188856484" />
     </inertial>
     <visual>
@@ -308,8 +298,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/lowleg1.STL" />
+          filename="package://Assem1_urdf/meshes/lowleg1.STL" />
       </geometry>
       <material
         name="">
@@ -323,8 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/lowleg1.STL" />
+          filename="package://Assem1_urdf/meshes/lowleg1.STL" />
       </geometry>
     </collision>
   </link>
@@ -350,17 +338,17 @@
     name="leg2">
     <inertial>
       <origin
-        xyz="0.136835766407544 -0.209013552372649 0.172020859625873"
+        xyz="0.148710766849134 -0.0140135523726508 0.278510543162465"
         rpy="0 0 0" />
       <mass
         value="0.365895452922409" />
       <inertia
         ixx="0.000466959962116351"
-        ixy="-3.62148513983994E-07"
-        ixz="7.41602205024679E-05"
-        iyy="0.00547244468330599"
-        iyz="1.3973638369312E-07"
-        izz="0.00501424101543479" />
+        ixy="3.62148513983982E-07"
+        ixz="7.41602205024681E-05"
+        iyy="0.005472444683306"
+        iyz="-1.39736383693121E-07"
+        izz="0.00501424101543481" />
     </inertial>
     <visual>
       <origin
@@ -368,8 +356,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/leg2.STL" />
+          filename="package://Assem1_urdf/meshes/leg2.STL" />
       </geometry>
       <material
         name="">
@@ -383,8 +370,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/leg2.STL" />
+          filename="package://Assem1_urdf/meshes/leg2.STL" />
       </geometry>
     </collision>
   </link>
@@ -410,16 +396,16 @@
     name="lowleg2">
     <inertial>
       <origin
-        xyz="0.276110187782911 -0.188613373131559 0.28124704166264"
+        xyz="0.00943634547376737 0.00638662686843915 0.169284361125698"
         rpy="0 0 0" />
       <mass
         value="0.662807706648712" />
       <inertia
         ixx="0.00531282955170692"
-        ixy="1.02126813768498E-05"
+        ixy="-1.02126813768498E-05"
         ixz="-0.000269149166010491"
         iyy="0.00576046743541068"
-        iyz="0.000183354822039283"
+        iyz="-0.000183354822039283"
         izz="0.00049846188856484" />
     </inertial>
     <visual>
@@ -428,8 +414,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/lowleg2.STL" />
+          filename="package://Assem1_urdf/meshes/lowleg2.STL" />
       </geometry>
       <material
         name="">
@@ -443,8 +428,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/lowleg2.STL" />
+          filename="package://Assem1_urdf/meshes/lowleg2.STL" />
       </geometry>
     </collision>
   </link>
@@ -470,17 +454,17 @@
     name="pulley">
     <inertial>
       <origin
-        xyz="-2.29592645520256E-05 -0.188999023339563 0.174003722367733"
+        xyz="0.28556949252123 0.00600097666043496 0.276527680420605"
         rpy="0 0 0" />
       <mass
         value="0.15148726652934" />
       <inertia
         ixx="9.46097837970229E-05"
-        ixy="-3.96555051164265E-09"
-        ixz="3.59496822912E-08"
+        ixy="3.96555051164422E-09"
+        ixz="3.59496822912099E-08"
         iyy="0.000169400649471206"
-        iyz="-1.87163807693509E-09"
-        izz="9.46089948969573E-05" />
+        iyz="1.87163807693523E-09"
+        izz="9.46089948969572E-05" />
     </inertial>
     <visual>
       <origin
@@ -488,8 +472,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/pulley.STL" />
+          filename="package://Assem1_urdf/meshes/pulley.STL" />
       </geometry>
       <material
         name="">
@@ -503,8 +486,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes
-/pulley.STL" />
+          filename="package://Assem1_urdf/meshes/pulley.STL" />
       </geometry>
     </collision>
   </link>
