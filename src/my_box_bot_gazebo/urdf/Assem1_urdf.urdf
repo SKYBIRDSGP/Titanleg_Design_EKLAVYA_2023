@@ -3,7 +3,9 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="Assem1_urdf">
+  name="titanleg">
+  <link
+    name="world_link"/>
   <link
     name="base_link">
     <inertial>
@@ -26,7 +28,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/base_link.STL" />
+          filename="package:///meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,10 +42,18 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/base_link.STL" />
+          filename="package:///meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
+  <joint
+    name="dummy_joint"
+    type="fixed">
+    <parent
+      link="world_link" />
+    <child
+      link="base_link" />
+  </joint>
   <link
     name="cbracket">
     <inertial>
@@ -66,7 +76,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/cbracket.STL" />
+          filename="package:///meshes/cbracket.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +90,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/cbracket.STL" />
+          filename="package:///meshes/cbracket.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +134,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/acc1.STL" />
+          filename="package:///meshes/acc1.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +148,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/acc1.STL" />
+          filename="package:///meshes/acc1.STL" />
       </geometry>
     </collision>
   </link>
@@ -182,7 +192,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/acc2.STL" />
+          filename="package:///meshes/acc2.STL" />
       </geometry>
       <material
         name="">
@@ -196,7 +206,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/acc2.STL" />
+          filename="package:///meshes/acc2.STL" />
       </geometry>
     </collision>
   </link>
@@ -240,7 +250,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/leg1.STL" />
+          filename="package:///meshes/leg1.STL" />
       </geometry>
       <material
         name="">
@@ -254,7 +264,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/leg1.STL" />
+          filename="package:///meshes/leg1.STL" />
       </geometry>
     </collision>
   </link>
@@ -271,8 +281,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="3.142"
-      upper="-3.142"
+      lower="-3.142"
+      upper="3.142"
       effort="200"
       velocity="3" />
   </joint>
@@ -298,7 +308,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/lowleg1.STL" />
+          filename="package:///meshes/lowleg1.STL" />
       </geometry>
       <material
         name="">
@@ -312,7 +322,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/lowleg1.STL" />
+          filename="package:///meshes/lowleg1.STL" />
       </geometry>
     </collision>
   </link>
@@ -356,7 +366,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/leg2.STL" />
+          filename="package:///meshes/leg2.STL" />
       </geometry>
       <material
         name="">
@@ -370,7 +380,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/leg2.STL" />
+          filename="package:///meshes/leg2.STL" />
       </geometry>
     </collision>
   </link>
@@ -387,8 +397,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="3.142"
-      upper="-3.142"
+      lower="-3.142"
+      upper="3.142"
       effort="200"
       velocity="3" />
   </joint>
@@ -414,7 +424,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/lowleg2.STL" />
+          filename="package:///meshes/lowleg2.STL" />
       </geometry>
       <material
         name="">
@@ -428,7 +438,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/lowleg2.STL" />
+          filename="package:///meshes/lowleg2.STL" />
       </geometry>
     </collision>
   </link>
@@ -472,7 +482,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/pulley.STL" />
+          filename="package:///meshes/pulley.STL" />
       </geometry>
       <material
         name="">
@@ -486,7 +496,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Assem1_urdf/meshes/pulley.STL" />
+          filename="package:///meshes/pulley.STL" />
       </geometry>
     </collision>
   </link>
