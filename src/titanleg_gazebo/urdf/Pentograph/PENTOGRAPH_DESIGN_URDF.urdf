@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="PENTOGRAPH_DESIGN_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.07126 0.06784 0.092059"
+        rpy="0 0 0" />
+      <mass
+        value="0.45945" />
+      <inertia
+        ixx="0.00042338"
+        ixy="-1.6644E-07"
+        ixz="-3.0553E-09"
+        iyy="0.00042337"
+        iyz="3.0454E-09"
+        izz="0.00078541" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L1">
+    <inertial>
+      <origin
+        xyz="0.028761 6.0596E-06 -0.00039839"
+        rpy="0 0 0" />
+      <mass
+        value="0.20853" />
+      <inertia
+        ixx="0.00030893"
+        ixy="-6.5605E-09"
+        ixz="1.8245E-06"
+        iyy="0.00021661"
+        iyz="-1.7015E-09"
+        izz="0.00029763" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="revolute">
+    <origin
+      xyz="0.071263 -0.12688 0.067842"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="L1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-6.28"
+      upper="6.28"
+      effort="300"
+      velocity="3" />
+  </joint>
+  <link
+    name="L2">
+    <inertial>
+      <origin
+        xyz="0.0137319521735813 0.0589583949400772 0.138334892888017"
+        rpy="0 0 0" />
+      <mass
+        value="0.459454765465857" />
+      <inertia
+        ixx="0.000423376819157994"
+        ixy="-1.66442615340834E-07"
+        ixz="-3.05527714251904E-09"
+        iyy="0.00042337024865555"
+        iyz="3.0454081377748E-09"
+        izz="0.000785414768070508" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="fixed">
+    <origin
+      xyz="0.10659 -0.057929 -0.12816"
+      rpy="0 0 0.5236" />
+    <parent
+      link="L1" />
+    <child
+      link="L2" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L3">
+    <inertial>
+      <origin
+        xyz="-0.0561215346786301 -0.0286939260314722 0.00580672367135705"
+        rpy="0 0 0" />
+      <mass
+        value="0.145584000580958" />
+      <inertia
+        ixx="0.000147462949140692"
+        ixy="-0.000186415874027763"
+        ixz="-6.55459727236244E-06"
+        iyy="0.00041675674498617"
+        iyz="-3.35124708146787E-06"
+        izz="0.000559008331813712" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="revolute">
+    <origin
+      xyz="0.013735 0.058961 0.17316"
+      rpy="0 0 1.1482" />
+    <parent
+      link="L2" />
+    <child
+      link="L3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.28"
+      upper="6.28"
+      effort="300"
+      velocity="3" />
+  </joint>
+  <link
+    name="L4">
+    <inertial>
+      <origin
+        xyz="5.9111E-09 -0.084839 -0.0036973"
+        rpy="0 0 0" />
+      <mass
+        value="0.062415" />
+      <inertia
+        ixx="0.00026789"
+        ixy="1.1198E-12"
+        ixz="4.9093E-11"
+        iyy="8.4531E-06"
+        iyz="4.64E-12"
+        izz="0.00027586" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4"
+    type="revolute">
+    <origin
+      xyz="-0.13356 -0.068285 0.0098027"
+      rpy="3.1416 0 0.3851" />
+    <parent
+      link="L3" />
+    <child
+      link="L4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-60"
+      upper="60"
+      effort="300"
+      velocity="3" />
+  </joint>
+  <link
+    name="L5">
+    <inertial>
+      <origin
+        xyz="1.5211E-09 -0.238 6.8958E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.38795" />
+      <inertia
+        ixx="0.00066025"
+        ixy="-2.3547E-12"
+        ixz="7.6097E-11"
+        iyy="0.00019373"
+        iyz="1.0478E-11"
+        izz="0.00067147" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5"
+    type="revolute">
+    <origin
+      xyz="0.14943 -0.21311 -0.010697"
+      rpy="0 0 -1.6583" />
+    <parent
+      link="L4" />
+    <child
+      link="L5" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-60"
+      upper="60"
+      effort="300"
+      velocity="3" />
+  </joint>
+  <link
+    name="L6">
+    <inertial>
+      <origin
+        xyz="-0.079566 -0.040681 -0.028701"
+        rpy="0 0 0" />
+      <mass
+        value="0.17369" />
+      <inertia
+        ixx="0.00024617"
+        ixy="-0.00035455"
+        ixz="-4.0834E-06"
+        iyy="0.00075836"
+        iyz="-2.0877E-06"
+        izz="0.0010004" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6"
+    type="revolute">
+    <origin
+      xyz="-0.19923 -0.017484 0.0205"
+      rpy="0 0 2.7565" />
+    <parent
+      link="L5" />
+    <child
+      link="L6" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-6.28"
+      upper="6.28"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L7">
+    <inertial>
+      <origin
+        xyz="-2.6062E-06 -2.3533E-06 -0.068823"
+        rpy="0 0 0" />
+      <mass
+        value="0.45945" />
+      <inertia
+        ixx="0.00042338"
+        ixy="-1.6644E-07"
+        ixz="-3.0553E-09"
+        iyy="0.00042337"
+        iyz="3.0454E-09"
+        izz="0.00078541" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J7"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.7263" />
+    <parent
+      link="L6" />
+    <child
+      link="L7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="L8">
+    <inertial>
+      <origin
+        xyz="-0.0561215346786301 -0.0286939260314722 0.00580672367135705"
+        rpy="0 0 0" />
+      <mass
+        value="0.145584000580958" />
+      <inertia
+        ixx="0.000147462949140692"
+        ixy="-0.000186415874027763"
+        ixz="-6.55459727236243E-06"
+        iyy="0.00041675674498617"
+        iyz="-3.35124708146787E-06"
+        izz="0.000559008331813712" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PENTOGRAPH_DESIGN_URDF/meshes/L8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J8"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.1416 0 -0.71306" />
+    <parent
+      link="L6" />
+    <child
+      link="L8" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-6.28"
+      upper="6.28"
+      effort="300"
+      velocity="3" />
+  </joint>
+</robot>
