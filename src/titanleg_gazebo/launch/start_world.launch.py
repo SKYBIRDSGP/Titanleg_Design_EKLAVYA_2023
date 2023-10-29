@@ -46,7 +46,7 @@ def generate_launch_description():
     )
 
     ##########DATA_INPUT##########
-    urdf_file = 'Slider_design/Slider_design_URDF.urdf'
+    urdf_file = 'slider_design/slider_design_URDF.urdf'
     package_description = 'titanleg_gazebo'
     ##########DATA_INPUT_END##########
 
