@@ -3,7 +3,9 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="final_urdf">
+  name="titanleg">
+  <link
+    name="world_link"/>
   <link
     name="base_link">
     <inertial>
@@ -44,6 +46,14 @@
       </geometry>
     </collision>
   </link>
+  <joint
+    name="dummy_joint"
+    type="fixed">
+    <parent
+      link="world_link" />
+    <child
+      link="base_link" />
+  </joint>
   <link
     name="c_bracket">
     <inertial>
