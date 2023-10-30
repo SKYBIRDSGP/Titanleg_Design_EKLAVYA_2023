@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="final_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.215654449508418 0.268004749781296 0.468267301866513"
+        rpy="0 0 0" />
+      <mass
+        value="3.03811696121002" />
+      <inertia
+        ixx="0.122852749133158"
+        ixy="1.64969041729228E-07"
+        ixz="-3.1439097398197E-09"
+        iyy="0.0743683576171624"
+        iyz="0.000156141469962153"
+        izz="0.184109027470444" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="c_bracket">
+    <inertial>
+      <origin
+        xyz="-0.0621160426573205 6.66379779257209E-06 -0.0419870468989706"
+        rpy="0 0 0" />
+      <mass
+        value="0.1941398277098" />
+      <inertia
+        ixx="0.000261155018400833"
+        ixy="-1.0451599620092E-08"
+        ixz="-3.72184232659517E-08"
+        iyy="0.000187909216337469"
+        iyz="-1.78676211495819E-09"
+        izz="0.000246157573305316" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/c_bracket.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/c_bracket.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="c_b"
+    type="fixed">
+    <origin
+      xyz="0.25765 -0.61988 0.5435"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="c_bracket" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="acc">
+    <inertial>
+      <origin
+        xyz="0.0137368153268937 0.0589606380723294 0.197209654391083"
+        rpy="0 0 0" />
+      <mass
+        value="1.0686598768576" />
+      <inertia
+        ixx="0.000954101183736438"
+        ixy="-2.48488027831709E-07"
+        ixz="-4.90113910453463E-09"
+        iyy="0.000954381899122571"
+        iyz="7.46042891479414E-09"
+        izz="0.00169444804483295" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/acc.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/acc.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="acc_abd_knee"
+    type="fixed">
+    <origin
+      xyz="0.058961 0.013735 0.086158"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="c_bracket" />
+    <child
+      link="acc" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="upperleg">
+    <inertial>
+      <origin
+        xyz="1.94830620636743E-07 -0.136846331501128 -0.0139999738375464"
+        rpy="0 0 0" />
+      <mass
+        value="0.73178682455496" />
+      <inertia
+        ixx="0.0100306124723734"
+        ixy="2.49536742061984E-09"
+        ixz="-2.62244950467951E-07"
+        iyy="0.000931771569342347"
+        iyz="-7.77880928183934E-12"
+        izz="0.010944871953608" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/upperleg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/upperleg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="acc_ul"
+    type="fixed">
+    <origin
+      xyz="0.013735 0.058961 0.29516"
+      rpy="3.1416 0 1.5603" />
+    <parent
+      link="acc" />
+    <child
+      link="upperleg" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="pulley">
+    <inertial>
+      <origin
+        xyz="-1.65143005070867E-05 -1.63786974211044E-05 0.0140009766604349"
+        rpy="0 0 0" />
+      <mass
+        value="0.15148726652934" />
+      <inertia
+        ixx="9.46435303972224E-05"
+        ixy="-1.12660524011356E-08"
+        ixz="-4.31453747154025E-09"
+        iyy="9.4575248296758E-05"
+        iyz="-7.83189860899336E-10"
+        izz="0.000169400649471206" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/pulley.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/pulley.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ul_pulley"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.028"
+      rpy="0 0 -2.7907" />
+    <parent
+      link="upperleg" />
+    <child
+      link="pulley" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lowerleg">
+    <inertial>
+      <origin
+        xyz="0.123760462498263 0.156226128581652 0.208535685291376"
+        rpy="0 0 0" />
+      <mass
+        value="0.662807707178181" />
+      <inertia
+        ixx="0.00532781613035963"
+        ixy="-8.1102766735082E-06"
+        ixz="3.01446392615171E-07"
+        iyy="0.000483475310695695"
+        iyz="0.000183638772467272"
+        izz="0.00576046743619263" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/lowerleg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf/meshes/lowerleg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ul_lowl"
+    type="fixed">
+    <origin
+      xyz="-0.26083 -0.40542 0.19492"
+      rpy="3.1416 0 1.6143" />
+    <parent
+      link="upperleg" />
+    <child
+      link="lowerleg" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
