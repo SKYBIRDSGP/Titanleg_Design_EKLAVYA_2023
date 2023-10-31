@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot
-  name="titanleg" xmlns:xacro="http://ros.org/wiki/xacro">
+name="titanleg" xmlns:xacro="http://ros.org/wiki/xacro">
   <link
-    name="world_link"/>
+  name="world_link"/>
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.21565 -0.46827 0.268"
+        xyz="0.213364495363574 -0.471640702282736 0.19640549122243"
         rpy="0 0 0" />
       <mass
-        value="3.0381" />
+        value="4.56027988555656" />
       <inertia
-        ixx="0.12285"
-        ixy="3.1439E-09"
-        ixz="1.6497E-07"
-        iyy="0.18411"
-        iyz="-0.00015614"
-        izz="0.074368" />
+        ixx="0.189441924698921"
+        ixy="0.00107759199253"
+        ixz="-0.00110055721004939"
+        iyy="0.241596135146403"
+        iyz="-0.00251149046217883"
+        izz="0.144666388806691" />
     </inertial>
     <visual>
       <origin
@@ -30,7 +30,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -55,17 +55,17 @@
     name="c_bracket">
     <inertial>
       <origin
-        xyz="-0.062116 6.6638E-06 -0.041987"
+        xyz="-0.0621160426573205 6.66379779257209E-06 -0.0419870468989706"
         rpy="0 0 0" />
       <mass
-        value="0.19414" />
+        value="0.1941398277098" />
       <inertia
-        ixx="0.00026116"
-        ixy="-1.0452E-08"
-        ixz="-3.7218E-08"
-        iyy="0.00018791"
-        iyz="-1.7868E-09"
-        izz="0.00024616" />
+        ixx="0.000261155018400833"
+        ixy="-1.04515996200884E-08"
+        ixz="-3.72184232659521E-08"
+        iyy="0.000187909216337469"
+        iyz="-1.78676211495791E-09"
+        izz="0.000246157573305316" />
     </inertial>
     <visual>
       <origin
@@ -78,7 +78,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -110,20 +110,20 @@
       velocity="0" />
   </joint>
   <link
-    name="acc">
+    name="abd_acc">
     <inertial>
       <origin
-        xyz="0.013737 0.058962 0.15056"
+        xyz="0.0137366855479558 0.0589617454017474 0.150563146931354"
         rpy="0 0 0" />
       <mass
-        value="0.58081" />
+        value="0.580805573486017" />
       <inertia
-        ixx="0.00049231"
-        ixy="-1.6607E-07"
-        ixz="-3.4927E-09"
-        iyy="0.0004923"
-        iyz="3.0309E-09"
-        izz="0.00090533" />
+        ixx="0.000492305119037265"
+        ixy="-1.66069058598287E-07"
+        ixz="-3.49271202080687E-09"
+        iyy="0.000492299071608541"
+        iyz="3.03086613508584E-09"
+        izz="0.000905329045363657" />
     </inertial>
     <visual>
       <origin
@@ -131,12 +131,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_box_bot_gazebo/meshes/acc.STL" />
+          filename="package://my_box_bot_gazebo/meshes/abd_acc.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -145,12 +145,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_box_bot_gazebo/meshes/acc.STL" />
+          filename="package://my_box_bot_gazebo/meshes/abd_acc.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="acc_abd_knee"
+    name="shoulder_joint"
     type="fixed">
     <origin
       xyz="0.058961 0.013735 0.086158"
@@ -158,25 +158,25 @@
     <parent
       link="c_bracket" />
     <child
-      link="acc" />
+      link="abd_acc" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="acc_knee">
+    name="knee_acc">
     <inertial>
       <origin
-        xyz="0.013737 0.058961 0.14374"
+        xyz="0.0137373611839682 0.058960746117987 0.143743758177868"
         rpy="0 0 0" />
       <mass
-        value="0.48785" />
+        value="0.487854303371581" />
       <inertia
-        ixx="0.00046194"
-        ixy="-1.6535E-07"
-        ixz="-3.4671E-09"
-        iyy="0.00046194"
-        iyz="3.0958E-09"
-        izz="0.00078912" />
+        ixx="0.000461942589547207"
+        ixy="-1.65351846880484E-07"
+        ixz="-3.46706400794511E-09"
+        iyy="0.000461936302665996"
+        iyz="3.09582952281677E-09"
+        izz="0.000789118999469293" />
     </inertial>
     <visual>
       <origin
@@ -184,12 +184,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_box_bot_gazebo/meshes/acc_knee.STL" />
+          filename="package://my_box_bot_gazebo/meshes/knee_acc.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -198,38 +198,43 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_box_bot_gazebo/meshes/acc_knee.STL" />
+          filename="package://my_box_bot_gazebo/meshes/knee_acc.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="adb_knee"
-    type="fixed">
+    name="knee_joint"
+    type="revolute">
     <origin
       xyz="-0.0281 0.015201 0.109"
       rpy="0 0 -0.53405" />
     <parent
-      link="acc" />
+      link="abd_acc" />
     <child
-      link="acc_knee" />
+      link="knee_acc" />
     <axis
       xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
-    name="upperleg">
+    name="upperleg1">
     <inertial>
       <origin
-        xyz="1.9483E-07 -0.13685 -0.014"
+        xyz="-0.00100299376130375 -0.136846344638095 0.00598644922577091"
         rpy="0 0 0" />
       <mass
-        value="0.73179" />
+        value="0.365894283988061" />
       <inertia
-        ixx="0.010031"
-        ixy="2.4954E-09"
-        ixz="-2.6224E-07"
-        iyy="0.00093177"
-        iyz="-7.7788E-12"
-        izz="0.010945" />
+        ixx="0.00501531006279228"
+        ixy="-2.49651872515819E-05"
+        ixz="-1.31419189750013E-07"
+        iyy="0.000465886615454427"
+        iyz="3.6496462278299E-07"
+        izz="0.00547244054208457" />
     </inertial>
     <visual>
       <origin
@@ -237,12 +242,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_box_bot_gazebo/meshes/upperleg.STL" />
+          filename="package://my_box_bot_gazebo/meshes/upperleg1.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -251,20 +256,73 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_box_bot_gazebo/meshes/upperleg.STL" />
+          filename="package://my_box_bot_gazebo/meshes/upperleg1.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="acc_ul"
+    name="leg1"
     type="fixed">
     <origin
       xyz="0.013735 0.058961 0.18616"
       rpy="3.1416 0 2.0944" />
     <parent
-      link="acc_knee" />
+      link="knee_acc" />
     <child
-      link="upperleg" />
+      link="upperleg1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="upperleg2">
+    <inertial>
+      <origin
+        xyz="-0.00100338820261525 -0.136846318364015 0.00598649213306363"
+        rpy="0 0 0" />
+      <mass
+        value="0.365892540566899" />
+      <inertia
+        ixx="0.00501530240958118"
+        ixy="-2.49676826176121E-05"
+        ixz="-1.30825760733807E-07"
+        iyy="0.000465884953887905"
+        iyz="3.64972401421192E-07"
+        izz="0.00547243141152344" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/upperleg2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/upperleg2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leg_joint2"
+    type="fixed">
+    <origin
+      xyz="0.013735 0.058961 0.21416"
+      rpy="0 0 -1.0472" />
+    <parent
+      link="knee_acc" />
+    <child
+      link="upperleg2" />
     <axis
       xyz="0 0 0" />
   </joint>
@@ -272,17 +330,17 @@
     name="pulley">
     <inertial>
       <origin
-        xyz="-1.6514E-05 -1.6379E-05 0.014001"
+        xyz="-1.65143005070867E-05 -1.63786974211044E-05 0.0140009766604349"
         rpy="0 0 0" />
       <mass
-        value="0.15149" />
+        value="0.15148726652934" />
       <inertia
-        ixx="9.4644E-05"
-        ixy="-1.1266E-08"
-        ixz="-4.3145E-09"
-        iyy="9.4575E-05"
-        iyz="-7.8319E-10"
-        izz="0.0001694" />
+        ixx="9.46435303972224E-05"
+        ixy="-1.12660524011322E-08"
+        ixz="-4.31453747154025E-09"
+        iyy="9.4575248296758E-05"
+        iyz="-7.83189860899337E-10"
+        izz="0.000169400649471206" />
     </inertial>
     <visual>
       <origin
@@ -295,7 +353,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -309,33 +367,38 @@
     </collision>
   </link>
   <joint
-    name="acc_pulley"
-    type="fixed">
+    name="pulley_joint"
+    type="revolute">
     <origin
       xyz="0.013735 0.058961 0.21416"
       rpy="3.1416 0 -1.3981" />
     <parent
-      link="acc_knee" />
+      link="knee_acc" />
     <child
       link="pulley" />
     <axis
       xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="lowerleg">
     <inertial>
       <origin
-        xyz="0.12376 0.15623 0.20854"
+        xyz="0.123760462498263 0.156226128581652 0.208535685291376"
         rpy="0 0 0" />
       <mass
-        value="0.66281" />
+        value="0.66280770717818" />
       <inertia
-        ixx="0.0053278"
-        ixy="-8.1103E-06"
-        ixz="3.0145E-07"
-        iyy="0.00048348"
-        iyz="0.00018364"
-        izz="0.0057605" />
+        ixx="0.00532781613035963"
+        ixy="-8.11027667350831E-06"
+        ixz="3.01446392615178E-07"
+        iyy="0.000483475310695695"
+        iyz="0.000183638772467272"
+        izz="0.00576046743619263" />
     </inertial>
     <visual>
       <origin
@@ -348,7 +411,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -362,8 +425,8 @@
     </collision>
   </link>
   <joint
-    name="pulley_lowl"
-    type="fixed">
+    name="lowerleg_joint"
+    type="revolute">
     <origin
       xyz="0.38429 0.29106 0.22292"
       rpy="-3.1416 0 -1.8781" />
@@ -373,5 +436,10 @@
       link="lowerleg" />
     <axis
       xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
   </joint>
 </robot>
