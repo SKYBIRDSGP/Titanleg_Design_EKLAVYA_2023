@@ -43,7 +43,7 @@ def generate_launch_description():
     )
 
     ##########DATA_INPUT##########
-    urdf_file = 'final_urdf.urdf'
+    urdf_file = 'final1_urdf.urdf'
     package_description = 'my_box_bot_gazebo'
     ##########DATA_INPUT_END##########
 
