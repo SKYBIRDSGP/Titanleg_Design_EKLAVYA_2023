@@ -12,6 +12,7 @@
   <depend>rclpy</depend>
   <depend>gazebo_ros</depend>
   <depend>my_box_bot_description</depend>
+  <depend>xacro</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

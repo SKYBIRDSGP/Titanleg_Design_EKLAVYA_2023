@@ -1,0 +1,39 @@
+[0.016s] Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/home/ananya/ros2_ws/install/my_box_bot_gazebo:/home/ananya/ros2_ws/install/gazebo_test:/opt/ros/humble /usr/bin/cmake --build /home/ananya/ros2_ws/build/my_box_bot_gazebo -- -j8 -l8
+[0.053s] Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/home/ananya/ros2_ws/install/my_box_bot_gazebo:/home/ananya/ros2_ws/install/gazebo_test:/opt/ros/humble /usr/bin/cmake --build /home/ananya/ros2_ws/build/my_box_bot_gazebo -- -j8 -l8
+[0.073s] Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/home/ananya/ros2_ws/install/my_box_bot_gazebo:/home/ananya/ros2_ws/install/gazebo_test:/opt/ros/humble /usr/bin/cmake --install /home/ananya/ros2_ws/build/my_box_bot_gazebo
+[0.079s] -- Install configuration: ""
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/spawn_robot_description.launch.py
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/start_world.launch.py
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/design1_launch.py
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/demo.launch.py
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/new.launch.py
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds/box_bot_empty.world
+[0.080s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final1_urdf.csv
+[0.081s] -- Installing: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final1_urdf.urdf
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/base_link.STL
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/pulley.STL
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/upperleg.STL
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/acc.STL
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/c_bracket.STL
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/acc_knee.STL
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/lowerleg.STL
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/package_run_dependencies/my_box_bot_gazebo
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/parent_prefix_path/my_box_bot_gazebo
+[0.081s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/ament_prefix_path.sh
+[0.082s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/ament_prefix_path.dsv
+[0.082s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/path.sh
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/environment/path.dsv
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.bash
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.sh
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.zsh
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/local_setup.dsv
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/package.dsv
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/ament_index/resource_index/packages/my_box_bot_gazebo
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/cmake/my_box_bot_gazeboConfig.cmake
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/cmake/my_box_bot_gazeboConfig-version.cmake
+[0.084s] -- Up-to-date: /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo/package.xml
+[0.085s] Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/home/ananya/ros2_ws/install/my_box_bot_gazebo:/home/ananya/ros2_ws/install/gazebo_test:/opt/ros/humble /usr/bin/cmake --install /home/ananya/ros2_ws/build/my_box_bot_gazebo
