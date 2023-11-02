@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+name="titanleg" xmlns:xacro="http://ros.org/wiki/xacro">
+<link
+  name="world_link"/>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.21336 -0.47164 0.19641"
+        rpy="0 0 0" />
+      <mass
+        value="4.5603" />
+      <inertia
+        ixx="0.18944"
+        ixy="0.0010776"
+        ixz="-0.0011006"
+        iyy="0.2416"
+        iyz="-0.0025115"
+        izz="0.14467" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="dummy_joint"
+    type="fixed">
+    <parent
+      link="world_link" />
+    <child
+      link="base_link" />
+  </joint>
+  <link
+    name="c_bracket">
+    <inertial>
+      <origin
+        xyz="0.053183 -0.068959 -0.12051"
+        rpy="0 0 0" />
+      <mass
+        value="0.77495" />
+      <inertia
+        ixx="0.00075346"
+        ixy="1.5562E-07"
+        ixz="-3.3726E-08"
+        iyy="0.00068021"
+        iyz="1.2441E-09"
+        izz="0.0011515" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/c_bracket.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/c_bracket.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cb_joint"
+    type="revolute">
+    <origin
+      xyz="0.31938 -0.55114 0.47454"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="c_bracket" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="motor_leg">
+    <inertial>
+      <origin
+        xyz="0.079264 0.0075092 0.10751"
+        rpy="0 0 0" />
+      <mass
+        value="1.3711" />
+      <inertia
+        ixx="0.010587"
+        ixy="-5.0116E-05"
+        ixz="-2.613E-07"
+        iyy="0.0014883"
+        iyz="7.3076E-07"
+        izz="0.011903" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/motor_leg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/motor_leg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="motor_leg_joint"
+    type="revolute">
+    <origin
+      xyz="-0.011894 0.010745 -0.16143"
+      rpy="3.1416 0 0.010453" />
+    <parent
+      link="c_bracket" />
+    <child
+      link="motor_leg" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lowerleg">
+    <inertial>
+      <origin
+        xyz="0.12376 0.15623 0.20854"
+        rpy="0 0 0" />
+      <mass
+        value="0.66281" />
+      <inertia
+        ixx="0.0053278"
+        ixy="-8.1103E-06"
+        ixz="3.0145E-07"
+        iyy="0.00048348"
+        iyz="0.00018364"
+        izz="0.0057605" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/lowerleg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/lowerleg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lower_joint"
+    type="revolute">
+    <origin
+      xyz="0.3406 -0.32494 -0.080516"
+      rpy="0 0 1.527" />
+    <parent
+      link="motor_leg" />
+    <child
+      link="lowerleg" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
