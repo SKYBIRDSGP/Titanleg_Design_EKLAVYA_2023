@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="titanleg_gazebo">
+  <link name="world"/>
+  <link
+    name="base_link_stand">
+    <inertial>
+      <origin
+        xyz="-2.0796E-07 -0.0043869 0.22451"
+        rpy="0 0 0" />
+      <mass
+        value="3.0381" />
+      <inertia
+        ixx="0.12285"
+        ixy="-2.9947E-09"
+        ixz="1.6602E-07"
+        iyy="0.18411"
+        iyz="-0.00015615"
+        izz="0.074368" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/base_link_stand.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/base_link_stand.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="dummy"
+    type="fixed">
+    <parent
+      link="world" />
+    <child
+      link="base_link_stand" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="c_act">
+    <inertial>
+      <origin
+        xyz="-0.0070006 -0.07012 -3.7125E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.63878" />
+      <inertia
+        ixx="0.0010297"
+        ixy="3.6029E-08"
+        ixz="-2.5269E-09"
+        iyy="0.00068339"
+        iyz="7.6666E-08"
+        izz="0.00061043" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/c_act.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/c_act.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="stand_c"
+    type="revolute">
+    <origin
+      xyz="0 -0.067 0.5"
+      rpy="0 0.0043739 0" />
+    <parent
+      link="base_link_stand" />
+    <child
+      link="c_act" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="knee_link">
+    <inertial>
+      <origin
+        xyz="-0.074218 0.0047005 -0.012602"
+        rpy="0 0 0" />
+      <mass
+        value="0.67416" />
+      <inertia
+        ixx="0.0011665"
+        ixy="2.3022E-07"
+        ixz="-3.2808E-06"
+        iyy="0.00071393"
+        iyz="2.7011E-05"
+        izz="0.00053531" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/knee_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/knee_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="c_knee"
+    type="revolute">
+    <origin
+      xyz="-0.046 -0.089 0"
+      rpy="0 -0.0043739 0" />
+    <parent
+      link="c_act" />
+    <child
+      link="knee_link" />
+    <axis
+      xyz="-0.99999 0 0.0043739" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="part1">
+    <inertial>
+      <origin
+        xyz="-0.001984 -0.014008 0.0023289"
+        rpy="0 0 0" />
+      <mass
+        value="0.022708" />
+      <inertia
+        ixx="2.9612E-05"
+        ixy="6.3521E-09"
+        ixz="-2.9901E-08"
+        iyy="6.9674E-06"
+        iyz="1.8788E-06"
+        izz="2.2705E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/part1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/part1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_part"
+    type="revolute">
+    <origin
+      xyz="-0.118 0 0.00051612"
+      rpy="0 0 0" />
+    <parent
+      link="knee_link" />
+    <child
+      link="part1" />
+    <axis
+      xyz="-0.99999 0 0.0043739" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="driver">
+    <inertial>
+      <origin
+        xyz="-0.00035191 0.02643 -0.086849"
+        rpy="0 0 0" />
+      <mass
+        value="0.079444" />
+      <inertia
+        ixx="4.255E-05"
+        ixy="4.4244E-08"
+        ixz="-1.5814E-07"
+        iyy="3.7064E-05"
+        iyz="8.5091E-06"
+        izz="1.1693E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/driver.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/driver.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="1_driver"
+    type="revolute">
+    <origin
+      xyz="-0.0019906 -0.084568 0.0021434"
+      rpy="0 0 0" />
+    <parent
+      link="part1" />
+    <child
+      link="driver" />
+    <axis
+      xyz="-0.99999 0 0.0043739" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="mainrod">
+    <inertial>
+      <origin
+        xyz="-0.00022359 0.075734 -0.012223"
+        rpy="0 0 0" />
+      <mass
+        value="0.038344" />
+      <inertia
+        ixx="0.00012409"
+        ixy="8.4106E-08"
+        ixz="-1.3582E-08"
+        iyy="4.9494E-06"
+        iyz="1.9229E-05"
+        izz="0.00012098" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/mainrod.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://titanleg_gazebo/meshes/mainrod.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_rod"
+    type="revolute">
+    <origin
+      xyz="-0.12085 0.059316 -0.19471"
+      rpy="0 0 0" />
+    <parent
+      link="knee_link" />
+    <child
+      link="mainrod" />
+    <axis
+      xyz="-0.99999 0 0.0043739" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+    <mimic
+      joint="1_driver"
+      multiplier="1"
+      offset="0.472111563" />
+  </joint>
+</robot>

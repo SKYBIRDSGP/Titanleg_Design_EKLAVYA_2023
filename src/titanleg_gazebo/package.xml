@@ -10,11 +10,13 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>robot_state_publisher</buildtool_depend>
   <buildtool_depend>ros2_control</buildtool_depend>
+  <buildtool_depend>std_msgs</buildtool_depend>
+  <buildtool_depend>geometry_msgs</buildtool_depend>
+  <buildtool_depend>sensor_msgs</buildtool_depend>
   <buildtool_depend>gazebo_ros2_control</buildtool_depend>
+  <buildtool_depend>joint_trajectory_controller</buildtool_depend>
+  <buildtool_depend>rviz</buildtool_depend>
   <buildtool_depend>xacro</buildtool_depend>
-  <buildtool_depend>joint_state_broadcaster</buildtool_depend>
-  <depend>rclpy</depend>
-  <depend>gazebo_ros</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
