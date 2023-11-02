@@ -19,11 +19,6 @@ find_package(joint_trajectory_controller REQUIRED)
 find_package(robot_state_publisher REQUIRED)
 
 install(
-  TARGETS publisher
-  DESTINATION lib/${PROJECT_NAME}
-)
-
-install(
   DIRECTORY
     config
     launch

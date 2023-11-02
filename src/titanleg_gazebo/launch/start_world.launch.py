@@ -6,6 +6,7 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument,  ExecuteProcess, RegisterEventHandler
 from launch.substitutions import Command
 from launch_ros.actions import Node
+import launch_ros.descriptions
 from launch.event_handlers import (OnProcessStart, OnProcessExit)
 from launch.actions import IncludeLaunchDescription
 from launch_ros.descriptions import ParameterValue
@@ -54,6 +55,7 @@ def generate_launch_description():
     print("Searching for the Design ===>")
     robot_description_content = Command(['xacro ',robot_desc_path])
     robot_description = {"robot_description": robot_description_content}
+    
     control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
@@ -116,10 +118,16 @@ def generate_launch_description():
             on_exit=[robot_controller_spawner],
         )
     )
+    control_node_after_gazebo = RegisterEventHandler(
+        event_handler=OnProcessExit(
+            target_action=control_node,
+            on_exit=[control_node],
+        )
+    )
 
     return LaunchDescription([
         gazebo,
-        control_node,
+        control_node_after_gazebo,
         robot_state_publisher_node,
         spawn_robot,
         delay_joint_state_broadcaster_spawner_after_spawn_robot,
