@@ -120,7 +120,7 @@ def generate_launch_description():
     )
     control_node_after_gazebo = RegisterEventHandler(
         event_handler=OnProcessExit(
-            target_action=control_node,
+            target_action=spawn_robot,
             on_exit=[control_node],
         )
     )
