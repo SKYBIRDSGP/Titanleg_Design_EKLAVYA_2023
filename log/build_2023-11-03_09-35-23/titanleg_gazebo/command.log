@@ -1,0 +1,2 @@
+Invoking command in '/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/build/titanleg_gazebo': /usr/bin/cmake /home/sra-vjti/Titanleg_Design_EKLAVYA_2023/src/titanleg_gazebo -DCMAKE_INSTALL_PREFIX=/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/install/titanleg_gazebo
+Invoked command in '/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/build/titanleg_gazebo' returned '1': /usr/bin/cmake /home/sra-vjti/Titanleg_Design_EKLAVYA_2023/src/titanleg_gazebo -DCMAKE_INSTALL_PREFIX=/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/install/titanleg_gazebo

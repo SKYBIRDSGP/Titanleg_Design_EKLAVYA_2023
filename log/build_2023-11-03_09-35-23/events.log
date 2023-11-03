@@ -1,0 +1,46 @@
+[0.000000] (-) TimerEvent: {}
+[0.000100] (titanleg_gazebo) JobQueued: {'identifier': 'titanleg_gazebo', 'dependencies': OrderedDict()}
+[0.000478] (titanleg_gazebo) JobStarted: {'identifier': 'titanleg_gazebo'}
+[0.013928] (titanleg_gazebo) JobProgress: {'identifier': 'titanleg_gazebo', 'progress': 'cmake'}
+[0.014102] (titanleg_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/src/titanleg_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/install/titanleg_gazebo'], 'cwd': '/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/build/titanleg_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'sra-vjti'), ('SSH_AGENT_PID', '1893'), ('XDG_SESSION_TYPE', 'x11'), ('HADOOP_COMMON_HOME', '/usr/local/hadoop'), ('SHLVL', '1'), ('HOME', '/home/sra-vjti'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1718'), ('HADOOP_COMMON_LIB_NATIVE_DIR', '/usr/local/hadoop/lib/native'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('LOGNAME', 'sra-vjti'), ('JOURNAL_STREAM', '8:55350'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'sra-vjti'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('WINDOWPATH', '2'), ('PATH', '/home/sra-vjti/mambaforge/condabin:/home/sra-vjti/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/hadoop/bin:/usr/local/hadoop/sbin'), ('SESSION_MANAGER', 'local/sra-ubuntu:@/tmp/.ICE-unix/1931,unix/sra-ubuntu:/tmp/.ICE-unix/1931'), ('INVOCATION_ID', '0517f3b48d014452812a5532c3ad3fb9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4c571700_d4dd_4421_9bf5_c8f771d8746f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('YARN_HOME', '/usr/local/hadoop'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('CONDA_PYTHON_EXE', '/home/sra-vjti/mambaforge/bin/python'), ('SHELL', '/bin/bash'), ('HADOOP_OPTS', '-Djava.library.path=/usr/local/hadoop/lib'), ('HADOOP_MAPRED_HOME', '/usr/local/hadoop'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311/'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/build/titanleg_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/sra-vjti/mambaforge/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('HADOOP_HDFS_HOME', '/usr/local/hadoop'), ('ROS_HOSTNAME', 'localhost'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('HADOOP_HOME', '/usr/local/hadoop')]), 'shell': False}
+[0.099913] (-) TimerEvent: {}
+[0.200443] (-) TimerEvent: {}
+[0.215809] (titanleg_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.300642] (-) TimerEvent: {}
+[0.401194] (-) TimerEvent: {}
+[0.450936] (titanleg_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.465530] (titanleg_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501312] (-) TimerEvent: {}
+[0.563220] (titanleg_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.572191] (titanleg_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.572848] (titanleg_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.573646] (titanleg_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.578198] (titanleg_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.601433] (-) TimerEvent: {}
+[0.649921] (titanleg_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.657979] (titanleg_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.658300] (titanleg_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.658770] (titanleg_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.668799] (titanleg_gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.669009] (titanleg_gazebo) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.669142] (titanleg_gazebo) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.669243] (titanleg_gazebo) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.669339] (titanleg_gazebo) StderrLine: {'line': b'\n'}
+[0.669428] (titanleg_gazebo) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.669507] (titanleg_gazebo) StderrLine: {'line': b'  any of the following names:\n'}
+[0.669584] (titanleg_gazebo) StderrLine: {'line': b'\n'}
+[0.669677] (titanleg_gazebo) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.669757] (titanleg_gazebo) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.669834] (titanleg_gazebo) StderrLine: {'line': b'\n'}
+[0.669917] (titanleg_gazebo) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.670011] (titanleg_gazebo) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.670105] (titanleg_gazebo) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.670195] (titanleg_gazebo) StderrLine: {'line': b'  has been installed.\n'}
+[0.670291] (titanleg_gazebo) StderrLine: {'line': b'\n'}
+[0.670379] (titanleg_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[0.670465] (titanleg_gazebo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.670569] (titanleg_gazebo) StdoutLine: {'line': b'See also "/home/sra-vjti/Titanleg_Design_EKLAVYA_2023/build/titanleg_gazebo/CMakeFiles/CMakeOutput.log".\n'}
+[0.671958] (titanleg_gazebo) CommandEnded: {'returncode': 1}
+[0.696905] (titanleg_gazebo) JobEnded: {'identifier': 'titanleg_gazebo', 'rc': 1}
+[0.701639] (-) TimerEvent: {}
+[0.707732] (-) EventReactorShutdown: {}
