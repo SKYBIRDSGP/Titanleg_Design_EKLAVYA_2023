@@ -43,7 +43,7 @@ def generate_launch_description():
     )
 
     ##########DATA_INPUT##########
-    urdf_file = 'final9_urdf.urdf'
+    urdf_file = 'final12_urdf.urdf'
     package_description = 'my_box_bot_gazebo'
     ##########DATA_INPUT_END##########
 
@@ -57,6 +57,17 @@ def generate_launch_description():
         emulate_tty=True,
         parameters=[{'use_sim_time': True, 'robot_description': ParameterValue(Command(['xacro ', robot_desc_path]),value_type=str)}],
         output = "screen"
+    )
+    joint_state_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+    )
+
+    robot_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["forward_position_controller", "--controller-manager", "/controller_manager"],
     )
     # Position and orientaion of the Leg : 
     # [X, Y, Z]
@@ -79,10 +90,24 @@ def generate_launch_description():
                     '-topic', '/robot_description'                                                                     
                    ]
     )
+    delay_joint_state_broadcaster_spawner_after_spawn_robot = RegisterEventHandler(
+        event_handler=OnProcessExit(
+            target_action=spawn_robot,
+            on_exit=[joint_state_broadcaster_spawner],
+        )
+    )
+    delay_robot_controller_spawner_after_joint_state_broadcaster_spawner = RegisterEventHandler(
+        event_handler=OnProcessExit(
+            target_action=joint_state_broadcaster_spawner,
+            on_exit=[robot_controller_spawner],
+        )
+    )
 
     return LaunchDescription([
         gazebo,
         robot_state_publisher_node,
         spawn_robot,
+        delay_joint_state_broadcaster_spawner_after_spawn_robot,
+        delay_robot_controller_spawner_after_joint_state_broadcaster_spawner
         ]
     )

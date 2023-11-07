@@ -1,0 +1,91 @@
+[0.013s] Invoking command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo': CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/home/ananya/ros2_ws/install/my_box_bot_gazebo:/home/ananya/ros2_ws/install/gazebo_test:/opt/ros/humble /usr/bin/cmake --build /home/ananya/ros2_ws/build/my_box_bot_gazebo -- -j8 -l8
+[0.032s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.130s] -- Found rclpy: 3.3.9 (/opt/ros/humble/share/rclpy/cmake)
+[0.130s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.150s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.151s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.155s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.163s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.173s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.210s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.211s] -- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.292s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.422s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.441s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.442s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.445s] -- Searching for dependencies of ignition-math6
+[0.446s] -- Looking for OGRE...
+[0.450s] -- Found Ogre Ghadamon (1.9.0)
+[0.450s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.457s] -- Looking for OGRE_Paging...
+[0.457s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.457s] -- Looking for OGRE_Terrain...
+[0.457s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.457s] -- Looking for OGRE_Property...
+[0.457s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.457s] -- Looking for OGRE_RTShaderSystem...
+[0.457s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.457s] -- Looking for OGRE_Volume...
+[0.457s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.457s] -- Looking for OGRE_Overlay...
+[0.457s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.522s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.522s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.522s] -- Searching for dependencies of ignition-transport8
+[0.535s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.542s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.546s] -- Checking for module 'libzmq >= 4'
+[0.554s] --   Found libzmq , version 4.3.4
+[0.583s] -- Checking for module 'uuid'
+[0.593s] --   Found uuid, version 2.37.2
+[0.629s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.629s] -- Searching for dependencies of ignition-msgs5
+[0.645s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.649s] -- Checking for module 'tinyxml2'
+[0.658s] --   Found tinyxml2, version 9.0.0
+[0.687s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.687s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.688s] -- Searching for dependencies of ignition-common3
+[0.688s] -- Looking for dlfcn.h - found
+[0.688s] -- Looking for libdl - found
+[0.698s] -- Searching for <ignition-common3> component [graphics]
+[0.698s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.698s] -- Searching for dependencies of ignition-common3-graphics
+[0.698s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.699s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.699s] -- Searching for dependencies of ignition-fuel_tools4
+[0.736s] -- Checking for module 'jsoncpp'
+[0.745s] --   Found jsoncpp, version 1.9.5
+[0.771s] -- Checking for module 'libzip'
+[0.781s] --   Found libzip, version 1.7.3
+[0.813s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.814s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.814s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.816s] -- Gazebo version: 11.10
+[0.824s] -- Found my_box_bot_description: 0.0.0 (/home/ananya/ros2_ws/install/my_box_bot_description/share/my_box_bot_description/cmake)
+[0.824s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.825s] -- Found ros2_control: 2.32.0 (/opt/ros/humble/share/ros2_control/cmake)
+[0.826s] -- Found gazebo_ros2_control: 0.4.4 (/opt/ros/humble/share/gazebo_ros2_control/cmake)
+[1.972s] -- Found joint_state_broadcaster: 2.25.0 (/opt/ros/humble/share/joint_state_broadcaster/cmake)
+[2.056s] -- Found parameter_traits: 0.3.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.095s] [31mCMake Error at CMakeLists.txt:17 (find_package):
+[2.095s]   By not providing "Findjoint_state_publisher.cmake" in CMAKE_MODULE_PATH
+[2.095s]   this project has asked CMake to find a package configuration file provided
+[2.095s]   by "joint_state_publisher", but CMake did not find one.
+[2.095s] 
+[2.095s]   Could not find a package configuration file provided by
+[2.095s]   "joint_state_publisher" with any of the following names:
+[2.095s] 
+[2.095s]     joint_state_publisherConfig.cmake
+[2.096s]     joint_state_publisher-config.cmake
+[2.096s] 
+[2.096s]   Add the installation prefix of "joint_state_publisher" to CMAKE_PREFIX_PATH
+[2.096s]   or set "joint_state_publisher_DIR" to a directory containing one of the
+[2.096s]   above files.  If "joint_state_publisher" provides a separate development
+[2.096s]   package or SDK, be sure it has been installed.
+[2.096s] 
+[2.096s] [0m
+[2.096s] -- Configuring incomplete, errors occurred!
+[2.096s] See also "/home/ananya/ros2_ws/build/my_box_bot_gazebo/CMakeFiles/CMakeOutput.log".
+[2.103s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[2.105s] Invoked command in '/home/ananya/ros2_ws/build/my_box_bot_gazebo' returned '2': CMAKE_PREFIX_PATH=/home/ananya/ros2_ws/install/my_box_bot_description:/home/ananya/ros2_ws/install/my_box_bot_gazebo:/home/ananya/ros2_ws/install/gazebo_test:/opt/ros/humble /usr/bin/cmake --build /home/ananya/ros2_ws/build/my_box_bot_gazebo -- -j8 -l8

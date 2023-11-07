@@ -1,1 +1,1 @@
-rclpy;gazebo_ros;my_box_bot_description;xacro;ament_lint_auto;ament_lint_common
+rclpy;gazebo_ros;my_box_bot_description;xacro;robot_state_publisher;ros2_control;gazebo_ros2_control;joint_state_broadcaster;ament_lint_auto;ament_lint_common

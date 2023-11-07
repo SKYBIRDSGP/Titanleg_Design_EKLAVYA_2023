@@ -4,11 +4,8 @@
 /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/demo.launch.py
 /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//launch/new.launch.py
 /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//worlds/box_bot_empty.world
-/home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final9_urdf.urdf
-/home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final9_urdf.csv
-/home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final8_urdf.urdf
-/home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final8_urdf.csv
-/home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final5_urdf.urdf
+/home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final12_urdf.csv
+/home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//urdf/final12_urdf.urdf
 /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/base_link.STL
 /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/motor_leg.STL
 /home/ananya/ros2_ws/install/my_box_bot_gazebo/share/my_box_bot_gazebo//meshes/c_bracket.STL
