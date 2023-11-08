@@ -43,11 +43,12 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_box_bot_gazebo/" TYPE DIRECTORY FILES
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_box_bot_gazebo" TYPE DIRECTORY FILES
+    "/home/ananya/ros2_ws/src/my_box_bot_gazebo/config"
     "/home/ananya/ros2_ws/src/my_box_bot_gazebo/launch"
-    "/home/ananya/ros2_ws/src/my_box_bot_gazebo/worlds"
-    "/home/ananya/ros2_ws/src/my_box_bot_gazebo/urdf"
     "/home/ananya/ros2_ws/src/my_box_bot_gazebo/meshes"
+    "/home/ananya/ros2_ws/src/my_box_bot_gazebo/src"
+    "/home/ananya/ros2_ws/src/my_box_bot_gazebo/urdf"
     )
 endif()
 

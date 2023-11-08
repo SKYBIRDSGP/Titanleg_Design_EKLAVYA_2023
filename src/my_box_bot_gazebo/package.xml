@@ -8,20 +8,25 @@
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-
-  <depend>rclpy</depend>
-  <depend>gazebo_ros</depend>
-  <depend>my_box_bot_description</depend>
-  <depend>xacro</depend>
-  <depend>robot_state_publisher</depend>
-  <depend>ros2_control</depend>
-  <depend>gazebo_ros2_control</depend>
-  <depend>joint_state_broadcaster</depend>
+  <buildtool_depend>robot_state_publisher</buildtool_depend>
+  <buildtool_depend>ros2_control</buildtool_depend>
+  <buildtool_depend>rclcpp</buildtool_depend>
+  <buildtool_depend>std_msgs</buildtool_depend>
+  <buildtool_depend>geometry_msgs</buildtool_depend>
+  <buildtool_depend>sensor_msgs</buildtool_depend>
+  <buildtool_depend>gazebo_ros2_control</buildtool_depend>
+  <buildtool_depend>joint_trajectory_controller</buildtool_depend>
+  <!-- <buildtool_depend>rviz</buildtool_depend> -->
+  <buildtool_depend>xacro</buildtool_depend>
+  <depend>controller_manager</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
+    <install>
+      <config>config</config>
+    </install>
   </export>
 </package>
