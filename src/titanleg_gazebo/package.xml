@@ -26,8 +26,8 @@
 
   <export>
     <build_type>ament_cmake</build_type>
-    <!-- <install>
+    <install>
       <config>config</config>
-    </install> -->
+    </install>
   </export>
 </package>

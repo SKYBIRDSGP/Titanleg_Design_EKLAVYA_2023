@@ -12,7 +12,6 @@ from launch.actions import IncludeLaunchDescription
 from launch_ros.descriptions import ParameterValue
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_prefix
-from launch_ros.descriptions import ParameterValue
 import random
 
 # this is the function launch which the system will look for
@@ -28,7 +27,7 @@ def generate_launch_description():
     )
     robot_desc_path = os.path.join(get_package_share_directory(package_description), "urdf", urdf_file)
     print("Searching for the Design ===>")
-    robot_description_content = Command(['xacro ',robot_desc_path])
+    robot_description_content =  ParameterValue(Command(['xacro ', robot_desc_path]),value_type=str)
     robot_description = {"robot_description": robot_description_content}
     
     control_node = Node(
@@ -101,9 +100,9 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        spawn_robot,
         control_node_after_gazebo,
         robot_state_publisher_node,
-        spawn_robot,
         delay_joint_state_broadcaster_spawner_after_spawn_robot,
         delay_robot_controller_spawner_after_joint_state_broadcaster_spawner
         

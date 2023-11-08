@@ -47,6 +47,6 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        titanleg,
-        gazebo
+        gazebo,
+        titanleg
     ])

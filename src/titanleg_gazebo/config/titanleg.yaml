@@ -11,22 +11,18 @@ controller_manager:
 forward_position_controller:
   ros__parameters:
     joints:
-      - stand_c
-      - c_knee
+      # - stand_c
+      # - c_knee
       - knee_part
-      - 1_driver
-      - knee_rod
     interface_name: position
 
 
 joint_trajectory_position_controller:
   ros__parameters:
     joints:
-      - stand_c
-      - c_knee
+      # - stand_c
+      # - c_knee
       - knee_part
-      - 1_driver
-      - knee_rod
 
     command_interfaces:
       - position
