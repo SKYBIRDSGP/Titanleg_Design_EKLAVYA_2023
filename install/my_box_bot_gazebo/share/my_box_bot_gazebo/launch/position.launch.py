@@ -23,7 +23,7 @@ def generate_launch_description():
         [
             FindPackageShare("my_box_bot_gazebo"),
             "config",
-            "positions.yaml",
+            "position.yaml",
         ]
     )
 

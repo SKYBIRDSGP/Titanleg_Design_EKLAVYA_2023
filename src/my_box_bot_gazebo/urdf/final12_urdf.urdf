@@ -221,28 +221,28 @@ name="titanleg" xmlns:xacro="http://ros.org/wiki/xacro">
       xyz="-1 0 0" />
     <limit
       lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      upper="3.14"
+      effort="1.0"
+      velocity="1.0" />
   </joint>
 <ros2_control name="GazeboSystem" type="system">
   <hardware>
     <plugin>gazebo_ros2_control/GazeboSystem</plugin>
   </hardware>
-  <!-- <joint name="stand_c">
+  <joint name="cb_joint">
     <command_interface name="position"/>
     <state_interface name="position"/>
     <state_interface name="velocity"/>
     <state_interface name="effort"/>
     <param name="initial_position">0.0</param> 
   </joint>
-  <joint name="c_knee">
+  <joint name="motor_leg_joint">
     <command_interface name="position"/>
     <state_interface name="position"/>
     <state_interface name="velocity"/>
     <state_interface name="effort"/>
     <param name="initial_position">0.0</param> 
-  </joint> -->
+  </joint> 
   <joint name="lower_joint">
     <command_interface name="position"/>
     <state_interface name="position"/>
