@@ -105,9 +105,9 @@ name="titanleg" xmlns:xacro="http://ros.org/wiki/xacro">
       xyz="0 -1 0" />
     <limit
       lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      upper="6.28"
+      effort="1.0"
+      velocity="1.0" />
   </joint>
   <link
     name="motor_leg">
@@ -163,9 +163,9 @@ name="titanleg" xmlns:xacro="http://ros.org/wiki/xacro">
       xyz="1 0 0" />
     <limit
       lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      upper="6.28"
+      effort="1.0"
+      velocity="1.0" />
   </joint>
   <link
     name="lowerleg">

@@ -11,8 +11,8 @@ controller_manager:
 forward_position_controller:
   ros__parameters:
     joints:
-      # - stand_c
-      # - c_knee
+      - cb_joint
+      - motor_leg_joint
       - lower_joint
     interface_name: position
 
@@ -20,8 +20,8 @@ forward_position_controller:
 joint_trajectory_position_controller:
   ros__parameters:
     joints:
-      # - stand_c
-      # - c_knee
+      - cb_joint
+      - motor_leg_joint
       - lower_joint
 
     command_interfaces:
