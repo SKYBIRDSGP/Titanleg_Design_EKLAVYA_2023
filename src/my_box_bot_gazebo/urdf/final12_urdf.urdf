@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+name="titanleg" xmlns:xacro="http://ros.org/wiki/xacro">
+<link
+  name="world_link"/>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0012 0.00038768 0.15291"
+        rpy="0 0 0" />
+      <mass
+        value="4.5603" />
+      <inertia
+        ixx="0.18944"
+        ixy="0.0010776"
+        ixz="0.0011006"
+        iyy="0.2416"
+        iyz="0.0025115"
+        izz="0.14467" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="dummy_joint"
+    type="fixed">
+    <parent
+      link="world_link" />
+    <child
+      link="base_link" />
+  </joint>
+  <link
+    name="c_bracket">
+    <inertial>
+      <origin
+        xyz="0.016789 0.07344 -9.2207E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.77495" />
+      <inertia
+        ixx="0.0011515"
+        ixy="3.3726E-08"
+        ixz="1.2441E-09"
+        iyy="0.00075346"
+        iyz="-1.5562E-07"
+        izz="0.00068021" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/c_bracket.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/c_bracket.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cb_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0034898 0.059627 0.5"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="c_bracket" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="6.28"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="motor_leg">
+    <inertial>
+      <origin
+        xyz="-0.046894 -0.001299 -0.073024"
+        rpy="0 0 0" />
+      <mass
+        value="1.3711" />
+      <inertia
+        ixx="0.011903"
+        ixy="-2.5365E-07"
+        ixz="7.3345E-07"
+        iyy="0.010585"
+        iyz="-0.00014521"
+        izz="0.0014903" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/motor_leg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/motor_leg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="motor_leg_joint"
+    type="revolute">
+    <origin
+      xyz="0.21211 0.089 0"
+      rpy="0 0 0" />
+    <parent
+      link="c_bracket" />
+    <child
+      link="motor_leg" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="6.28"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="lowerleg">
+    <inertial>
+      <origin
+        xyz="-0.014387 0.1116 -0.0062309"
+        rpy="0 0 0" />
+      <mass
+        value="0.66281" />
+      <inertia
+        ixx="0.0057605"
+        ixy="-0.00018335"
+        ixz="1.0255E-05"
+        iyy="0.00049859"
+        iyz="0.00027027"
+        izz="0.0053127" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/lowerleg.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_box_bot_gazebo/meshes/lowerleg.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lower_joint"
+    type="revolute">
+    <origin
+      xyz="-0.012 -0.0043465 -0.26991"
+      rpy="0 0 0" />
+    <parent
+      link="motor_leg" />
+    <child
+      link="lowerleg" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+<ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+  <joint name="cb_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+    <param name="initial_position">0.0</param> 
+  </joint>
+  <joint name="motor_leg_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+    <param name="initial_position">0.0</param> 
+  </joint> 
+  <joint name="lower_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+    <param name="initial_position">0.0</param> 
+  </joint>
+</ros2_control>
+<gazebo>  
+  <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+    <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+    <parameters>$(find my_box_bot_gazebo)/config/titanleg.yaml</parameters>
+  </plugin>
+</gazebo> 
+</robot>
