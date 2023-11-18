@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/humble/include/**",
+        "/home/ananya/Titanleg_Design_EKLAVYA_2023-Ananya_goraksha/my_box_bot_description/include/**",
+        "/home/ananya/Titanleg_Design_EKLAVYA_2023-Ananya_goraksha/my_box_bot_gazebo/include/**",
+        "/home/ananya/Titanleg_Design_EKLAVYA_2023/ros2_ws/src/my_box_bot_description/include/**",
+        "/home/ananya/Titanleg_Design_EKLAVYA_2023/ros2_ws/src/my_box_bot_gazebo/include/**",
+        "/home/ananya/colcon_ws/src/gazebo_ros2_control/include/**",
+        "/home/ananya/colcon_ws/src/realsense_gazebo_plugin/include/**",
+        "/home/ananya/ros2_ws/src/my_box_bot_description/include/**",
+        "/home/ananya/ros2_ws/src/my_box_bot_gazebo/include/**",
+        "/home/ananya/src/gazebo_ros2_control/include/**",
+        "/home/ananya/src/realsense_gazebo_plugin/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
