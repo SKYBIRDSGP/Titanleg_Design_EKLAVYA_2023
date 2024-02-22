@@ -15,6 +15,16 @@ Firstly, the basic concepts of the project needs to be cleared. Quadrupped is ad
  ## Study of the Quadrupped Bots and the Research we did :
 Let's start from start. We had a rough idea about the Quadrupped Robots, their working, advantages, applications ...blah blah. But this wasn't just enough to design a leg on which the bot would completely rely.There are many factors on which the stability margin of our bot depends, for eg. the material used, the gears reduction, the materials....and this goes on. Just imagine yourself while walking, your smooth locomotion depends on the factors like your hip joint and knee joint , your leg links ; similar is for the Quadrapeds.  
      It was really a challenging task then to get our concepts stronger, our imagination wider and maike the bot's eg stronger. And knowing htis all we then started with the study. We picked the research papers of some of the very famous Quadrupeds like [MIT Cheetah](https://news.mit.edu/2019/mit-mini-cheetah-first-four-legged-robot-to-backflip-0304), [IISc Stoch](https://eprints.iisc.ac.in/77543/1/ICCAR_2019.pdf), [ANYmal](https://www.youtube.com/watch?app=desktop&v=P6y_dhFTgik) and then after having a good study of the locomotion system & power transmission system of these, we started the our leg's rough paper sketches.
+
+## We initially made 3 designs :
+
+One where there is a belt pulley system attached to the upperlink so as to drive the lower link
+Second where we have a Pentograph mechanism to drive the upper and lower links simultaneously as when and wherever required.
+Third , where we combined the concepts of design and the pentograph to make an indegenous design.
+This way we got 3 designs ready for our Quadruped Titan. We got these designs with their dimensions and then startec implementing them in SOLIDWORKS. We also used FUSION360 whenever required. Getting started with the Pentograph mechanism in Solid Works, basically, a Pentograph or scissor lift, is a type of platform which moves vertically rather than horizontally. It uses linked, folding supports in a criss-cross pattern.
+
+Finally after spending almost a month on the designing part, we finally got 3 designs completed simultaneously, of which we were to analyse and stimulate the 1st & 3rd design.
+
 ## drive link 
 https://drive.google.com/drive/folders/14rB3PaadOdzT6qz0VS9wnxuEa2b5UEA0
 
