@@ -1,0 +1,145 @@
+<sdf version='1.7'>
+  <model name='titanleg'>
+    <link name='base'>
+      <inertial>
+        <pose>-0.001033 -0.012681 0.025838 0 -0 0</pose>
+        <mass>0.238916</mass>
+        <inertia>
+          <ixx>0.000508539</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000568218</iyy>
+          <iyz>1.4166e-06</iyz>
+          <izz>0.000274807</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_collision'>
+        <pose>-0.001033 -0.01264 0.000132 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/base.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_visual'>
+        <pose>-0.001033 -0.01264 0.000132 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/base.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='upleg' type='revolute'>
+      <pose relative_to='base'>-0.001033 -0.02264 0.170132 -1.5708 -0 -0</pose>
+      <parent>base</parent>
+      <child>upperleg</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>6.28319</upper>
+          <effort>1</effort>
+          <velocity>20</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='upperleg'>
+      <pose relative_to='upleg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0.02815 -0.01 0 -0 0</pose>
+        <mass>0.0213271</mass>
+        <inertia>
+          <ixx>1.18912e-05</ixx>
+          <ixy>-1.62319e-38</ixy>
+          <ixz>3.12908e-37</ixz>
+          <iyy>1.31689e-06</iyy>
+          <iyz>3.89483e-38</iyz>
+          <izz>1.13683e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='upperleg_collision'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/upperleg.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='upperleg_visual'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/upperleg.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='lowleg' type='revolute'>
+      <pose relative_to='upperleg'>-0 0.07 -0.015 -3.14159 0 -0</pose>
+      <parent>upperleg</parent>
+      <child>lowerleg</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-2.61799</lower>
+          <upper>2.61799</upper>
+          <effort>1</effort>
+          <velocity>20</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='lowerleg'>
+      <pose relative_to='lowleg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0 -0.03 -0.005 0 -0 0</pose>
+        <mass>0.0129681</mass>
+        <inertia>
+          <ixx>5.48149e-06</ixx>
+          <ixy>4.30546e-39</ixy>
+          <ixz>2.1924e-39</ixz>
+          <iyy>3.49301e-07</iyy>
+          <iyz>3.94777e-40</iyz>
+          <izz>5.61466e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='lowerleg_collision'>
+        <pose>-0 -0.03 -0.01 -1.5708 -0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/lowerleg.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='lowerleg_visual'>
+        <pose>-0 -0.03 -0.01 -1.5708 -0 -0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/lowerleg.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>0</static>
+    <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
+      <parameters>$(find simulation_gazebo)/config/titanleg.yaml</parameters>
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <controller_manager_name>controller_manager</controller_manager_name>
+    </plugin>
+  </model>
+</sdf>

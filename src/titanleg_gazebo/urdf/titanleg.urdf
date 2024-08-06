@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was manually written by Me(sgpatki3422@gmail.com) using referance of the a standard URDF file
+     But this process can be automated.
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot 
+  name="titanleg" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link 
+    name="base">
+    <inertial>
+      <origin 
+        xyz="-0.0010328877169244411651 -0.012680636016326577581 0.025838136107332362879" 
+        rpy="0 0 0"/>
+      <mass 
+        value="0.2389159265358978268" />
+      <inertia 
+        ixx="0.00050853941355525147678" 
+        ixy="0"  
+        ixz="0" 
+        iyy="0.00056821849696051559934" 
+        iyz="1.4165976703480123117e-06" 
+        izz="0.00027480680101558849172" />
+    </inertial>  
+    <visual> 
+      <origin 
+        xyz="-0.0010328877169244444177 -0.012639544251600748001 0.00013158993667400017968" 
+        rpy="0 -0 0" />
+      <geometry>
+        <mesh 
+          filename="package://titanleg_gazebo/meshes/base.stl"/>
+      </geometry>
+      <material 
+        name="">
+      <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin 
+        xyz="-0.0010328877169244444177 -0.012639544251600748001 0.00013158993667400017968" 
+        rpy="0 -0 0" />
+      <geometry>
+      <mesh 
+        filename="package://titanleg_gazebo/meshes/base.stl"/>
+      </geometry>
+    </collision> 
+  </link>
+<!--##########################################Base Link Done##########################################-->
+  <link 
+    name="upperleg">
+      <inertial>
+        <origin 
+          xyz="1.5547434040984775436e-18 0.028150417425226770957 -0.010000000000000000208" 
+          rpy="0 0 0"/>
+        <mass 
+          value="0.021327087723647879247" />
+        <inertia 
+          ixx="1.1891188233795461931e-05" 
+          ixy="-1.6231864972222622566e-38"  
+          ixz="3.1290811762276622042e-37" 
+          iyy="1.3168853359931068498e-06" 
+          iyz="3.8948313179432658947e-38"  
+          izz="1.1368316259484578939e-05" />
+        </inertial>
+        <visual>
+          <origin 
+            xyz="0 0 0" 
+            rpy="1.570796326794896558 -3.755064446158425628e-32 0" />
+          <geometry>
+            <mesh 
+              filename="package://titanleg_gazebo/meshes/upperleg.stl"/>
+            </geometry>
+            <material 
+              name="">
+            <color 
+              rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+        <collision>
+          <origin 
+            xyz="0 0 0" 
+            rpy="1.570796326794896558 -3.755064446158425628e-32 0" />
+          <geometry>
+            <mesh 
+              filename="package://titanleg_gazebo/meshes/upperleg.stl"/>
+          </geometry>
+        </collision>
+  </link>
+  <joint 
+    name="upleg" 
+    type="revolute">
+    <origin 
+      xyz="-0.0010328877169244327083 -0.02263954425160074474 0.17013158993667401586" 
+      rpy="-1.57079632679489678 -1.1102230246251666477e-16 -2.3129646346504601432e-16" />
+    <parent 
+      link="base" />
+    <child 
+      link="upperleg" />
+    <axis 
+      xyz="0 0 1"/>
+    <limit 
+      lower="0" 
+      upper="6.283185307179586232" 
+      effort="1" 
+      velocity="20" />
+  </joint>
+<!--##########################################Upper-Leg Done##########################################-->  
+  <link 
+    name="lowerleg">
+    <inertial>
+    <origin 
+      xyz="-9.4903807804088388957e-18 -0.02999999999999999889 -0.0050000000000000018388" 
+      rpy="0 0 0"/>
+    <mass 
+      value="0.012968058482431914918" />
+    <inertia 
+      ixx="5.4814909087697322995e-06" 
+      ixy="4.3054644563938804658e-39"  
+      ixz="2.1924041463253052447e-39" 
+      iyy="3.4930077458100720173e-07" 
+      iyz="3.9477688968005942105e-40" 
+      izz="5.6146573753102087359e-06" />
+    </inertial>
+    <visual>
+      <origin 
+        xyz="-9.1072982488782372457e-18 -0.02999999999999999889 -0.010000000000000001943" 
+        rpy="-1.570796326794896558 -1.9758244856884691856e-34 -5.3424503952383650829e-44" />
+      <geometry>
+        <mesh 
+          filename="package://titanleg_gazebo/meshes/lowerleg.stl"/>
+      </geometry>
+      <material 
+        name="">
+      <color 
+        rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin 
+        xyz="-9.1072982488782372457e-18 -0.02999999999999999889 -0.010000000000000001943" 
+        rpy="-1.570796326794896558 -1.9758244856884691856e-34 -5.3424503952383650829e-44" />
+      <geometry>
+      <mesh 
+        filename="package://titanleg_gazebo/meshes/lowerleg.stl"/>
+      </geometry>
+    </collision> 
+  </link>
+  <joint 
+    name="lowleg" 
+    type="revolute">
+    <origin 
+      xyz="-8.6736173798840354721e-19 0.070000000000000575651 -0.015000000000000002914" 
+      rpy="-3.141592653589793116 8.1569392916065539295e-28 -1.2325951644060575644e-32" />
+    <parent 
+      link="upperleg" />
+    <child 
+      link="lowerleg" />
+    <axis 
+      xyz="0 0 1"/>
+    <limit 
+    lower="-2.6179938779914944114" 
+    upper="2.6179938779914944114" 
+    effort="1" 
+    velocity="20" />
+  </joint>
+<!--##########################################Lowerleg Done##########################################-->  
+  
+<!--##########################################The gazebo control plugins and parameters##########################################-->  
+<ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+  <joint name="upleg">
+    <command_interface name="position"/>
+    <state_interface name="position">
+      <param name="initial_value">0.0</param>
+    </state_interface>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+  <joint name="lowleg">
+    <command_interface name="position"/>
+    <state_interface name="position">
+      <param name="initial_value">0.0</param>
+    </state_interface>
+    <state_interface name="velocity"/>
+    <state_interface name="effort"/>
+  </joint>
+</ros2_control>
+<gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control"> 
+    <!-- <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin"> -->
+      <!-- <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type> -->
+      <parameters>$(find simulation_gazebo)/config/titanleg.yaml</parameters>
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <controller_manager_name>controller_manager</controller_manager_name>
+    </plugin>
+</gazebo>
+</robot>

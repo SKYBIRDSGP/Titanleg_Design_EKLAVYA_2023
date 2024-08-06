@@ -18,7 +18,6 @@ find_package(gazebo_ros2_control REQUIRED)
 find_package(joint_state_broadcaster REQUIRED)
 find_package(joint_trajectory_controller REQUIRED)
 find_package(robot_state_publisher REQUIRED)
-find_package(controller_manager REQUIRED)
 
 
 install(
@@ -26,6 +25,7 @@ install(
     config
     launch
     meshes
+    src
     urdf
         
   DESTINATION

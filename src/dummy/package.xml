@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!-- <?xmlns:xacro="http://www.ros.org/wiki/xacro"?> -->
+<package format="3">
+  <name>titanleg_gazebo</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="sgpatki3422@gmail.com">sarvesh</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>robot_state_publisher</buildtool_depend>
+  <buildtool_depend>ros2_control</buildtool_depend>
+  <buildtool_depend>rclcpp</buildtool_depend>
+  <buildtool_depend>std_msgs</buildtool_depend>
+  <buildtool_depend>geometry_msgs</buildtool_depend>
+  <buildtool_depend>sensor_msgs</buildtool_depend>
+  <buildtool_depend>gazebo_ros2_control</buildtool_depend>
+  <buildtool_depend>joint_trajectory_controller</buildtool_depend>
+  <!-- <buildtool_depend>rviz</buildtool_depend> -->
+  <buildtool_depend>xacro</buildtool_depend>
+  <depend>controller_manager</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <install>
+      <config>config</config>
+    </install>
+  </export>
+</package>

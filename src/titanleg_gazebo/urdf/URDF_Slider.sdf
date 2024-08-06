@@ -1,0 +1,296 @@
+<sdf version='1.7'>
+  <model name='titanleg'>
+    <link name='base_link_stand'>
+      <inertial>
+        <pose>-0 -0.004387 0.22451 0 -0 0</pose>
+        <mass>3.0381</mass>
+        <inertia>
+          <ixx>0.12285</ixx>
+          <ixy>-2.9947e-09</ixy>
+          <ixz>1.6602e-07</ixz>
+          <iyy>0.18411</iyy>
+          <iyz>-0.00015615</iyz>
+          <izz>0.074368</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_stand_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/base_link_stand.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_stand_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/base_link_stand.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='stand_c' type='revolute'>
+      <pose relative_to='base_link_stand'>0 -0.067 0.5 0 0.004374 0</pose>
+      <parent>base_link_stand</parent>
+      <child>c_act</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='c_act'>
+      <pose relative_to='stand_c'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.007001 -0.07012 -4e-06 0 -0 0</pose>
+        <mass>0.63878</mass>
+        <inertia>
+          <ixx>0.0010297</ixx>
+          <ixy>3.6029e-08</ixy>
+          <ixz>-2.5269e-09</ixz>
+          <iyy>0.00068339</iyy>
+          <iyz>7.6666e-08</iyz>
+          <izz>0.00061043</izz>
+        </inertia>
+      </inertial>
+      <collision name='c_act_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/c_act.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='c_act_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/c_act.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='c_knee' type='revolute'>
+      <pose relative_to='c_act'>-0.046 -0.089 0 0 -0.004374 0</pose>
+      <parent>c_act</parent>
+      <child>knee_link</child>
+      <axis>
+        <xyz>-0.99999 0 0.004374</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='knee_link'>
+      <pose relative_to='c_knee'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.074218 0.004701 -0.012602 0 -0 0</pose>
+        <mass>0.67416</mass>
+        <inertia>
+          <ixx>0.0011665</ixx>
+          <ixy>2.3022e-07</ixy>
+          <ixz>-3.2808e-06</ixz>
+          <iyy>0.00071393</iyy>
+          <iyz>2.7011e-05</iyz>
+          <izz>0.00053531</izz>
+        </inertia>
+      </inertial>
+      <collision name='knee_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/knee_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='knee_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/knee_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='knee_part' type='revolute'>
+      <pose relative_to='knee_link'>-0.118 0 0.000516 0 -0 0</pose>
+      <parent>knee_link</parent>
+      <child>part1</child>
+      <axis>
+        <xyz>-0.99999 0 0.004374</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='part1'>
+      <pose relative_to='knee_part'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.001984 -0.014008 0.002329 0 -0 0</pose>
+        <mass>0.022708</mass>
+        <inertia>
+          <ixx>2.9612e-05</ixx>
+          <ixy>6.3521e-09</ixy>
+          <ixz>-2.9901e-08</ixz>
+          <iyy>6.9674e-06</iyy>
+          <iyz>1.8788e-06</iyz>
+          <izz>2.2705e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='part1_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/part1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='part1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/part1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='1_driver' type='revolute'>
+      <pose relative_to='part1'>-0.001991 -0.084568 0.002143 0 -0 0</pose>
+      <parent>part1</parent>
+      <child>driver</child>
+      <axis>
+        <xyz>-0.99999 0 0.004374</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='driver'>
+      <pose relative_to='1_driver'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000352 0.02643 -0.086849 0 -0 0</pose>
+        <mass>0.079444</mass>
+        <inertia>
+          <ixx>4.255e-05</ixx>
+          <ixy>4.4244e-08</ixy>
+          <ixz>-1.5814e-07</ixz>
+          <iyy>3.7064e-05</iyy>
+          <iyz>8.5091e-06</iyz>
+          <izz>1.1693e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='driver_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/driver.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='driver_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/driver.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='knee_rod' type='revolute'>
+      <pose relative_to='knee_link'>-0.12085 0.059316 -0.19471 0 -0 0</pose>
+      <parent>knee_link</parent>
+      <child>mainrod</child>
+      <axis>
+        <xyz>-0.99999 0 0.004374</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='mainrod'>
+      <pose relative_to='knee_rod'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000224 0.075734 -0.012223 0 -0 0</pose>
+        <mass>0.038344</mass>
+        <inertia>
+          <ixx>0.00012409</ixx>
+          <ixy>8.4106e-08</ixy>
+          <ixz>-1.3582e-08</ixz>
+          <iyy>4.9494e-06</iyy>
+          <iyz>1.9229e-05</iyz>
+          <izz>0.00012098</izz>
+        </inertia>
+      </inertial>
+      <collision name='mainrod_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/mainrod.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='mainrod_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://titanleg_gazebo/meshes/mainrod.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>0</static>
+    <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
+      <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+      <parameters>$(find titanleg_gazebo)/config/titanleg.yaml</parameters>
+    </plugin>
+  </model>
+</sdf>

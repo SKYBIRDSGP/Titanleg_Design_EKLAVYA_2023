@@ -11,16 +11,18 @@ controller_manager:
 forward_position_controller:
   ros__parameters:
     joints:
-      upleg
-      lowleg
+      # - stand_c
+      # - c_knee
+      - knee_part
     interface_name: position
 
 
 joint_trajectory_position_controller:
   ros__parameters:
     joints:
-      upleg
-      lowleg
+      # - stand_c
+      # - c_knee
+      - knee_part
 
     command_interfaces:
       - position

@@ -4,6 +4,7 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="titanleg" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="world"/>
   <link
     name="base_link_stand">
     <inertial>
@@ -352,7 +353,7 @@
   <hardware>
     <plugin>gazebo_ros2_control/GazeboSystem</plugin>
   </hardware>
-  <joint name="stand_c">
+  <!-- <joint name="stand_c">
     <command_interface name="position"/>
     <state_interface name="position"/>
     <state_interface name="velocity"/>
@@ -365,7 +366,7 @@
     <state_interface name="velocity"/>
     <state_interface name="effort"/>
     <param name="initial_position">0.0</param> 
-  </joint> 
+  </joint> -->
   <joint name="knee_part">
     <command_interface name="position"/>
     <state_interface name="position"/>
